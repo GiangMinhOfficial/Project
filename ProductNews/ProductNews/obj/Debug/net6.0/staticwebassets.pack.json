@@ -1,0 +1,1013 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\animate.min.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\flaticon.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\fontawesome-all.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\fontawesome-all.min.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\gijgo.css",
+      "PackagePath": "staticwebassets\\assets\\css\\gijgo.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\main.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.map"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\assets\\css\\nice-select.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\assets\\css\\responsive.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slick.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\slicknav.css",
+      "PackagePath": "staticwebassets\\assets\\css\\slicknav.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\style.map",
+      "PackagePath": "staticwebassets\\assets\\css\\style.map"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\themify-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\themify-icons.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\css\\ticker-style.css",
+      "PackagePath": "staticwebassets\\assets\\css\\ticker-style.css"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\assets\\fonts\\_flaticon.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\flaticon.html",
+      "PackagePath": "staticwebassets\\assets\\fonts\\flaticon.html"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\themify.eot",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.eot"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\themify.svg",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\themify.ttf",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.ttf"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\fonts\\themify.woff",
+      "PackagePath": "staticwebassets\\assets\\fonts\\themify.woff"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\about\\about_lft.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about_lft.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\about\\about_right.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\about_right.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\about\\pet_care.png",
+      "PackagePath": "staticwebassets\\assets\\img\\about\\pet_care.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\adapt_icon\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\adapt_icon\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\adapt_icon\\1.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\adapt_icon\\1.svg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\adapt_icon\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\adapt_icon\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\adapt_icon\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\adapt_icon\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\banner\\dog.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\dog.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\banner\\img.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner\\img.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\author.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\author.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\blog_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\blog_4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\learn_about_bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\learn_about_bg.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\single_blog_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\single_blog_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\single_blog_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\single_blog_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\single_blog_5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\single_blog_5.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\blog\\slide_thumb_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\blog\\slide_thumb_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\comment\\comment_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\comment\\comment_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\comment\\comment_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\comment\\comment_3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\assets\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\_team.scss",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\_team.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\about.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\about.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\body_card1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\body_card1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\body_card2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\body_card2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\body_card3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\body_card3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\body_card4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\body_card4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\footer_post1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\footer_post1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\footer_post2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\footer_post2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\footer_post3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\footer_post3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\header_card.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\header_card.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\most_recent.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\most_recent.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\most_recent1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\most_recent1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\most_recent2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\most_recent2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\section_bg02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\section_bg02.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\team1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\team1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\team2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\team2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\team3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\team3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\tranding1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\tranding1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\tranding2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\tranding2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weekly2News1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weekly2News1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weekly2News2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weekly2News2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weekly2News3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weekly2News3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weekly2News4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weekly2News4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weeklyNews1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weeklyNews1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weeklyNews2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weeklyNews2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\weeklyNews3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\weeklyNews3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details5.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_news_details6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_news_details6.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_right_img1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_right_img1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_right_img2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_right_img2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_right_img3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_right_img3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\gallery\\whats_right_img4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\gallery\\whats_right_img4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\logo\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\logo\\logo2_footer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo\\logo2_footer.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\news\\icon-fb.png",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\icon-fb.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\news\\icon-ins.png",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\icon-ins.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\news\\icon-tw.png",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\icon-tw.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\news\\icon-yo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\icon-yo.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\news\\news_card.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\news\\news_card.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\offers\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\offers\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\offers\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\offers\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\our_blog\\blog-img1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\our_blog\\blog-img1.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\next.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\next.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_10.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_5.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_6.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_7.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_8.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\post_9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\post_9.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\post\\preview.png",
+      "PackagePath": "staticwebassets\\assets\\img\\post\\preview.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\10.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\4.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\5.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\6.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\7.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\8.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\prising\\9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\prising\\9.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\service_icon_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\service_icon_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\service_icon_2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\service_icon_2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\service_icon_3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\service_icon_3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\service\\service_icon_bg_1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\service\\service_icon_bg_1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\team\\1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\1.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\team\\2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\2.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\team\\3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\team\\3.png"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\right1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\right1.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\right2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\right2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\right3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\right3.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\right4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\right4.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\right5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\right5.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_bottom1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_bottom1.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_bottom2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_bottom2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_bottom3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_bottom3.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top02.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top02.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top03.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top03.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top2.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top3.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\img\\trending\\trending_top4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\trending\\trending_top4.jpg"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\animated.headline.js",
+      "PackagePath": "staticwebassets\\assets\\js\\animated.headline.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\contact.js",
+      "PackagePath": "staticwebassets\\assets\\js\\contact.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\gijgo.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\gijgo.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.form.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.form.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.magnific-popup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.paroller.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.paroller.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.scrollUp.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.scrollUp.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.sticky.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.sticky.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.ticker.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.ticker.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\assets\\js\\mail-script.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\one-page-nav-min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\one-page-nav-min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\plugins.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\site.js",
+      "PackagePath": "staticwebassets\\assets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\slick.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\vendor\\jquery-1.12.4.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\jquery-1.12.4.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\vendor\\modernizr-3.5.0.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\vendor\\modernizr-3.5.0.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\js\\wow.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_about-page.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_about-page.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_blog.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_blog.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_blog_page.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_blog_page.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_bradcam.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_bradcam.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_color.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_color.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_common.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_common.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_completed-cases.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_completed-cases.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_contact.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_elements.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_elements.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_extend.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_extend.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_footer.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_footer.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_headerMenu.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_headerMenu.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_overlay.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_overlay.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_recent-articles.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_recent-articles.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_services.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_services.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_services_section.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_services_section.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_team.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_team.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_testimonial.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_testimonial.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_trending.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_trending.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_wecky2-new.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_wecky2-new.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_wecky3-new.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_wecky3-new.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_whats-new.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_whats-new.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\_youtube.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_youtube.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\style.scss"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\video\\news1.mp4",
+      "PackagePath": "staticwebassets\\assets\\video\\news1.mp4"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\video\\news2.mp4",
+      "PackagePath": "staticwebassets\\assets\\video\\news2.mp4"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\video\\news3.mp4",
+      "PackagePath": "staticwebassets\\assets\\video\\news3.mp4"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\1f98608e-27c2-4c64-8992-c633d600846f.webp",
+      "PackagePath": "staticwebassets\\images\\1f98608e-27c2-4c64-8992-c633d600846f.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\50585ce2-0195-4627-a566-1c9e9b71af85.webp",
+      "PackagePath": "staticwebassets\\images\\50585ce2-0195-4627-a566-1c9e9b71af85.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\5473a0b4-55ae-43f8-a1ca-cf564dcf1c1c.webp",
+      "PackagePath": "staticwebassets\\images\\5473a0b4-55ae-43f8-a1ca-cf564dcf1c1c.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\a04ce4d9-4aff-4f91-a82a-830adf78149c.webp",
+      "PackagePath": "staticwebassets\\images\\a04ce4d9-4aff-4f91-a82a-830adf78149c.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\b4fecb5d-41ba-4292-a319-a8bb82d7b27b.webp",
+      "PackagePath": "staticwebassets\\images\\b4fecb5d-41ba-4292-a319-a8bb82d7b27b.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\ea5067d3-9129-4b5d-a0a5-1cf6771a4cba.webp",
+      "PackagePath": "staticwebassets\\images\\ea5067d3-9129-4b5d-a0a5-1cf6771a4cba.webp"
+    },
+    {
+      "Id": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\f8a71ba6-a793-4f75-96ef-b52f90584b7e",
+      "PackagePath": "staticwebassets\\images"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProductNews.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ProductNews.props",
+      "PackagePath": "build\\ProductNews.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ProductNews.props",
+      "PackagePath": "buildMultiTargeting\\ProductNews.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ProductNews.props",
+      "PackagePath": "buildTransitive\\ProductNews.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

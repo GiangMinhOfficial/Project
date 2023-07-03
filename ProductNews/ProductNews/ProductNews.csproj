@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.48" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -16,7 +17,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\CmtEval\" />
+    <Folder Include="wwwroot\assets\plugins\ckfinder\App_Data\" />
+    <Folder Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
+    <Folder Include="wwwroot\assets\plugins\ckfinder\userfiles\" />
     <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.Plugin.DiskQuota\CKFinder.Connector.Plugin.DiskQuota.csproj" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.Plugin.GetFileInfo\CKFinder.Connector.Plugin.GetFileInfo.csproj" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.Plugin.UserActionsLogger\CKFinder.Connector.Plugin.UserActionsLogger.csproj" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.Plugin.Watermark\CKFinder.Connector.Plugin.Watermark.csproj" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.Samples.sln" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\CKFinder.Connector.WebApp.csproj.user" />
+    <None Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\Properties\PublishProfiles\FolderProfile.pubxml.user" />
   </ItemGroup>
 
 </Project>

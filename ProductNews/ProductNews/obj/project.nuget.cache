@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OnSO+vpo+Qc9ESqlLd63KLt9VgJMhl/d8ZWm8LOebTexd49De1+xkPvyJbUafBZUhM7fYBG3WnKJVRoa5seN1Q==",
+  "dgSpecHash": "1dkWDW4wTWizsUT8f5WOpxt39TO1c6F2eXxKRDSunFffRBQpsaBu+vA7F5ZWdGH3zmHWiK27BfFhDGdrwH0iWA==",
   "success": true,
-  "projectFilePath": "D:\\FPT University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\ProductNews.csproj",
+  "projectFilePath": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\ProductNews.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\PC\\.nuget\\packages\\htmlagilitypack\\1.11.48\\htmlagilitypack.1.11.48.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core.af\\2.14.1\\humanizer.core.af.2.14.1.nupkg.sha512",

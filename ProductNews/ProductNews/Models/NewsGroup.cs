@@ -17,7 +17,7 @@ namespace ProductNews.Models
         public int? CreatedBy { get; set; }
         public int? ModifiedBy { get; set; }
         public string? ModifiedHistory { get; set; }
-        public bool? Status { get; set; }
+        public bool? IsDelete { get; set; }
 
         public virtual Account? CreatedByNavigation { get; set; }
         public virtual Account? ModifiedByNavigation { get; set; }

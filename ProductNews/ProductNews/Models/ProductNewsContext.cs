@@ -17,7 +17,9 @@ namespace ProductNews.Models
         }
 
         public virtual DbSet<Account> Accounts { get; set; } = null!;
+        public virtual DbSet<Comment> Comments { get; set; } = null!;
         public virtual DbSet<Customer> Customers { get; set; } = null!;
+        public virtual DbSet<Evaluation> Evaluations { get; set; } = null!;
         public virtual DbSet<News> News { get; set; } = null!;
         public virtual DbSet<NewsGroup> NewsGroups { get; set; } = null!;
 
@@ -26,7 +28,7 @@ namespace ProductNews.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server=localhost;database=ProductNews;uid=sa;password=123;");
+                optionsBuilder.UseSqlServer("server=localhost; database=ProductNews; uid=sa; pwd=123");
             }
         }
 
@@ -52,6 +54,29 @@ namespace ProductNews.Models
                 entity.Property(e => e.Username).HasMaxLength(50);
             });
 
+            modelBuilder.Entity<Comment>(entity =>
+            {
+                entity.Property(e => e.Content).HasColumnType("ntext");
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.NewsId).HasColumnName("NewsID");
+
+                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Customer)
+                    .WithMany(p => p.Comments)
+                    .HasForeignKey(d => d.CustomerId)
+                    .HasConstraintName("FK__Comments__Custom__440B1D61");
+
+                entity.HasOne(d => d.News)
+                    .WithMany(p => p.Comments)
+                    .HasForeignKey(d => d.NewsId)
+                    .HasConstraintName("FK__Comments__NewsID__4316F928");
+            });
+
             modelBuilder.Entity<Customer>(entity =>
             {
                 entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
@@ -75,12 +100,34 @@ namespace ProductNews.Models
                 entity.Property(e => e.UserName).HasMaxLength(100);
             });
 
+            modelBuilder.Entity<Evaluation>(entity =>
+            {
+                entity.ToTable("Evaluation");
+
+                entity.Property(e => e.Content).HasColumnType("ntext");
+
+                entity.Property(e => e.CreatedDate).HasColumnType("datetime");
+
+                entity.Property(e => e.IsDelete).HasDefaultValueSql("((0))");
+
+                entity.Property(e => e.NewsId).HasColumnName("NewsID");
+
+                entity.Property(e => e.UpdatedDate).HasColumnType("datetime");
+
+                entity.HasOne(d => d.Customer)
+                    .WithMany(p => p.Evaluations)
+                    .HasForeignKey(d => d.CustomerId)
+                    .HasConstraintName("FK__Evaluatio__Custo__5DCAEF64");
+
+                entity.HasOne(d => d.News)
+                    .WithMany(p => p.Evaluations)
+                    .HasForeignKey(d => d.NewsId)
+                    .HasConstraintName("FK__Evaluatio__NewsI__5CD6CB2B");
+            });
+
             modelBuilder.Entity<News>(entity =>
             {
-                entity.HasKey(e => e.NewId)
-                    .HasName("PK__News__7CC3769EB12962E2");
-
-                entity.Property(e => e.NewId).HasColumnName("NewID");
+                entity.Property(e => e.NewsId).HasColumnName("NewsID");
 
                 entity.Property(e => e.CreatedDate).HasColumnType("datetime");
 

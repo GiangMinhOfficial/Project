@@ -1,0 +1,927 @@
+﻿@model News
+@{
+    ViewData["title"] = "Tin tức";
+}
+
+<style>
+    a {
+        color: black
+    }
+
+    .shine {
+        color: #fe8c23;
+        font-size: 13px;
+    }
+
+    .no-shine {
+        font-size: 13px;
+    }
+
+    .rating-top {
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+    }
+
+        .rating-top .point {
+            color: #fe8c23;
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 27px;
+            margin-top: 2px;
+        }
+
+        .rating-top .rating-total {
+            font-size: 13px;
+        }
+
+    .rating-list {
+        font-size: 10px
+    }
+
+        .rating-list li {
+            display: flex;
+            align-items: baseline;
+            /*margin-bottom: 7px;*/
+            height: 20px;
+        }
+
+            .rating-list li .number-star {
+                /*display: inline-flex;
+                                                                                                                                                                                                                                    align-items: baseline;*/
+                margin-right: 5px
+            }
+
+            .rating-list li .progress {
+                width: 20%;
+                height: 5px;
+                margin-right: 5px;
+            }
+
+            .rating-list li .number-percent {
+                font-size: 11px;
+                font-weight: bold;
+                color: #2f80ed;
+            }
+
+    .comment {
+        display: flex;
+        flex-direction: column
+    }
+
+        .comment .comment-top p {
+            display: inline-block;
+            margin: 0;
+            font-weight: bold;
+            font-size: 16px
+        }
+
+        .comment .comment-content p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .comment .comment-click i, span {
+            font-size: 14px;
+            color: #2f80ed
+        }
+
+        .comment .comment-click .reply {
+            display: none;
+        }
+
+            .comment .comment-click .reply input {
+                border: 1px solid lightgray;
+                border-radius: 5px
+            }
+
+        .comment .comment-click .comment-on-click {
+            cursor: pointer
+        }
+
+    .comment-btn {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+        .comment-btn .button {
+            cursor: pointer;
+            background-color: lightgray;
+            padding: 20px 80px;
+            border-radius: 5px
+        }
+
+            /*.comment-btn .button:hover {
+                                                                                                                                                    cursor: pointer;
+                                                                                                                                                    background-color: white;
+                                                                                                                                                    border: 1px solid lightgray;
+                                                                                                                                                    padding: 20px 80px;
+                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                }*/
+
+            .comment-btn .button a {
+                color: #fff !important;
+            }
+
+    .reset-this {
+        animation: none;
+        animation-delay: 0;
+        animation-direction: normal;
+        animation-duration: 0;
+        animation-fill-mode: none;
+        animation-iteration-count: 1;
+        animation-name: none;
+        animation-play-state: running;
+        animation-timing-function: ease;
+        backface-visibility: visible;
+        background: 0;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: transparent;
+        background-image: none;
+        background-origin: padding-box;
+        background-position: 0 0;
+        background-position-x: 0;
+        background-position-y: 0;
+        background-repeat: repeat;
+        background-size: auto auto;
+        border: 0;
+        border-style: none;
+        border-width: medium;
+        border-color: inherit;
+        border-bottom: 0;
+        border-bottom-color: inherit;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        border-collapse: separate;
+        border-image: none;
+        border-left: 0;
+        border-left-color: inherit;
+        border-left-style: none;
+        border-left-width: medium;
+        border-radius: 0;
+        border-right: 0;
+        border-right-color: inherit;
+        border-right-style: none;
+        border-right-width: medium;
+        border-spacing: 0;
+        border-top: 0;
+        border-top-color: inherit;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        border-top-style: none;
+        border-top-width: medium;
+        bottom: auto;
+        box-shadow: none;
+        box-sizing: content-box;
+        caption-side: top;
+        clear: none;
+        clip: auto;
+        color: inherit;
+        columns: auto;
+        column-count: auto;
+        column-fill: balance;
+        column-gap: normal;
+        column-rule: medium none currentColor;
+        column-rule-color: currentColor;
+        column-rule-style: none;
+        column-width: auto;
+        content: normal;
+        counter-increment: none;
+        counter-reset: none;
+        cursor: auto;
+        direction: ltr;
+        display: inline;
+        empty-cells: show;
+        float: none;
+        font: normal;
+        font-family: inherit;
+        font-size: medium;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        height: auto;
+        hyphens: none;
+        left: auto;
+        letter-spacing: normal;
+        line-height: normal;
+        list-style: none;
+        list-style-image: none;
+        list-style-position: outside;
+        list-style-type: disc;
+        margin: 0;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        max-height: none;
+        max-width: none;
+        min-height: 0;
+        min-width: 0;
+        opacity: 1;
+        orphans: 0;
+        outline: 0;
+        outline-color: invert;
+        outline-style: none;
+        outline-width: medium;
+        overflow: visible;
+        overflow-x: visible;
+        overflow-y: visible;
+        padding: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 0;
+        page-break-after: auto;
+        page-break-before: auto;
+        page-break-inside: auto;
+        perspective: none;
+        perspective-origin: 50% 50%;
+        position: static;
+        /* May need to alter quotes for different locales (e.g fr) */
+        quotes: '\201C' '\201D' '\2018' '\2019';
+        right: auto;
+        tab-size: 8;
+        table-layout: auto;
+        text-align: inherit;
+        text-align-last: auto;
+        text-decoration: none;
+        text-decoration-color: inherit;
+        text-decoration-line: none;
+        text-decoration-style: solid;
+        text-indent: 0;
+        text-shadow: none;
+        text-transform: none;
+        top: auto;
+        transform: none;
+        transform-style: flat;
+        transition: none;
+        transition-delay: 0s;
+        transition-duration: 0s;
+        transition-property: none;
+        transition-timing-function: ease;
+        unicode-bidi: normal;
+        vertical-align: baseline;
+        visibility: visible;
+        white-space: normal;
+        widows: 0;
+        width: auto;
+        word-spacing: normal;
+        z-index: auto;
+        /* basic modern patch */
+        all: initial;
+        all: unset;
+    }
+</style>
+<style>
+    .popup {
+        background: rgba(0,0,0,0.2);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .popup-content {
+        height: 520px;
+        width: 500px;
+        background: #fff;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        position: relative
+    }
+
+    .popup .popup-content .popup-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        .popup .popup-content .popup-top p {
+            margin: 0;
+        }
+
+        .popup .popup-content .popup-top .close-btn {
+            border: 1px solid #eceff8;
+            padding: 6px;
+            border-radius: 5px
+        }
+
+    .box-cmt-popup .info-pro {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline
+    }
+
+    .info-pro .img-cmt img {
+        max-width: 60px
+    }
+
+    .box-cmt-popup .select-star ul {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 20px
+    }
+
+        .box-cmt-popup .select-star ul li {
+            width: 50px;
+            text-align: center;
+        }
+
+    .box-cmt-popup form textarea {
+        background-color: #fff;
+        border-radius: 4px 4px 0 0;
+        resize: none;
+        border: 1px solid #bdbdbd;
+        color: #323232;
+        padding: 10px;
+        width: 100%;
+        font-size: 14px
+    }
+
+    form .list-input {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        form .list-input input {
+            width: 47%;
+            border-radius: 4px;
+            border: 1px solid #bdbdbd;
+            height: 40px;
+            padding: 10px;
+            font-size: 14px;
+        }
+
+    form button {
+        background-color: #2f80ed;
+        border: 0;
+        border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+        padding: 11px 10px;
+        width: 215px;
+        text-align: center;
+        margin-top: 10px;
+    }
+</style>
+
+
+
+<!--================Blog Area =================-->
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post">
+                    @Html.Raw(ViewData["content"])
+                </div>
+                <div class="rating">
+                    <hr />
+                    <p>Đánh giá @Model.NewsHeading</p>
+                    <div class="rating-top">
+                        <p class="point">
+                            @{
+                                double number = (double)ViewData["ratingTotal"];
+                                string ratingTotal = number.ToString("0.0").Replace(',', '.');
+                            }
+                            @ratingTotal
+                        </p>
+                        <div class="list-star">
+                            <i class="fas fa-star @(number >= 0.5 ? "shine" : "no-shine")"></i>
+                            <i class="fas fa-star @(number >= 1.5 ? "shine" : "no-shine")"></i>
+                            <i class="fas fa-star @(number >= 2.5 ? "shine" : "no-shine")"></i>
+                            <i class="fas fa-star @(number >= 3.5 ? "shine" : "no-shine")"></i>
+                            <i class="fas fa-star @(number >= 4.5 ? "shine" : "no-shine")"></i>
+                        </div>
+                        <p class="rating-total">@(ViewBag.evaluations == null ? 0 : ViewBag.evaluations.Count) đánh giá</p>
+                    </div>
+                    <ul class="rating-list">
+                        <li>
+                            <div class="number-star">
+                                5
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width:@ViewData["fiveStarPercent"]%;"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="number-percent">@ViewData["fiveStarPercent"]%</p>
+                        </li>
+                        <li>
+                            <div class="number-star">
+                                4
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: @ViewData["fourStarPercent"]%;"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="number-percent">@ViewData["fourStarPercent"]%</p>
+                        </li>
+                        <li>
+                            <div class="number-star">
+                                3
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: @ViewData["threeStarPercent"]%;"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="number-percent">@ViewData["threeStarPercent"]%</p>
+                        </li>
+                        <li>
+                            <div class="number-star">
+                                2
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: @ViewData["twoStarPercent"]%;"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="number-percent">@ViewData["twoStarPercent"]%</p>
+                        </li>
+                        <li>
+                            <div class="number-star">
+                                1
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: @ViewData["oneStarPercent"]%;"
+                                     aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <p class="number-percent">@ViewData["oneStarPercent"]%</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr />
+
+                @if (ViewBag.evaluations != null)
+                {
+                    <div id="eval-area">
+                        @foreach (Evaluation eval in ViewBag.evaluations)
+                        {
+                            <div class="comment">
+                                <div class="comment-top">
+                                    <p>@eval.Customer.UserName</p>
+                                </div>
+                                <div class="comment-rate">
+                                    <i class="fas fa-star @(eval.Rating >= 1 ? "shine" : "no-shine")"></i>
+                                    <i class="fas fa-star @(eval.Rating >= 2 ? "shine" : "no-shine")"></i>
+                                    <i class="fas fa-star @(eval.Rating >= 3 ? "shine" : "no-shine")"></i>
+                                    <i class="fas fa-star @(eval.Rating >= 4 ? "shine" : "no-shine")"></i>
+                                    <i class="fas fa-star @(eval.Rating >= 5 ? "shine" : "no-shine")"></i>
+                                </div>
+
+                                <div class="comment-content">
+                                    <p>
+                                        @eval.Content
+                                    </p>
+                                </div>
+
+                                <div class="comment-click">
+                                    <div class="comment-on-click" onclick="reply(@eval.EvaluationId)">
+                                        <i class="far fa-comment"></i>
+                                        <span>Thảo luận</span>
+                                    </div>
+                                    <div class="reply" id="eval_@eval.EvaluationId">
+                                        <input type="text" placeholder="Nhập thảo luận của bạn">
+                                        <a href="">GỬI</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr />
+                        }
+                    </div>
+                }
+
+                <div class="comment-btn">
+                    <a>
+                        <div class="button" onclick="openPopup()">
+
+                            <i class="far fa-star"></i>
+                            <span>Viết đánh giá</span>
+
+                        </div>
+                    </a>
+
+                    <div class="button">
+                        <a>
+                            <span>Xem @(ViewBag.evaluations == null ? 0 : ViewBag.evaluations.Count) đánh giá</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="comments-area" id="cmt-area">
+                    <h4>@(ViewBag.comments == null ? 0 : ViewBag.comments.Count) Comments</h4>
+                    @if (ViewBag.comments != null)
+                    {
+                        @foreach (Comment cmt in ViewBag.comments)
+                        {
+                            <div class="comment-list">
+                                <div class="single-comment justify-content-between d-flex">
+                                    <div class="user justify-content-between d-flex">
+                                        <div class="desc">
+                                            <p class="comment">
+                                                @cmt.Content
+                                            </p>
+                                            <div class="d-flex justify-content-between">
+                                                <div class="d-flex align-items-center">
+                                                    <h5>
+                                                        <a href="">@cmt.Customer.UserName</a>
+                                                    </h5>
+                                                    <p class="date">
+                                                        @cmt.UpdatedDate.Value.ToString("g", new System.Globalization.CultureInfo("en-US"))
+                                                    </p>
+                                                </div>
+                                                <div class="reply-btn">
+                                                    <a href="#" class="btn-reply text-uppercase">reply</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+
+                <div class="comment-form">
+                    <h4>Leave a Reply</h4>
+                    <form class="form-contact comment_form" asp-controller="Comment" asp-action="CreateComment" asp-route-newsId="@Model.NewsId">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control w-100" name="content" id="comment" cols="30" rows="9" required
+                                              placeholder="Write Comment"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="customerName" id="name" type="text" placeholder="Name" required>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="button button-contactForm btn_1 boxed-btn">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_right_sidebar">
+                    <aside class="single_sidebar_widget search_widget">
+                        <form action="#">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Search Keyword'
+                                           onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search Keyword'">
+                                    <div class="input-group-append">
+                                        <button class="btns" type="button"><i class="ti-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                    type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </aside>
+                    <aside class="single_sidebar_widget post_category_widget">
+                        <h4 class="widget_title">Category</h4>
+                        <ul class="list cat-list">
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Resaurant food</p>
+                                    <p>(37)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Travel news</p>
+                                    <p>(10)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Modern technology</p>
+                                    <p>(03)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Product</p>
+                                    <p>(11)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Inspiration</p>
+                                    <p>(21)</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex">
+                                    <p>Health Care</p>
+                                    <p>(21)</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <aside class="single_sidebar_widget popular_post_widget">
+                        <h3 class="widget_title">Recent Post</h3>
+                        <div class="media post_item">
+                            <img src="assets/img/post/post_1.png" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>From life was you fish...</h3>
+                                </a>
+                                <p>January 12, 2019</p>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="assets/img/post/post_2.png" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>The Amazing Hubble</h3>
+                                </a>
+                                <p>02 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="assets/img/post/post_3.png" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>Astronomy Or Astrology</h3>
+                                </a>
+                                <p>03 Hours ago</p>
+                            </div>
+                        </div>
+                        <div class="media post_item">
+                            <img src="assets/img/post/post_4.png" alt="post">
+                            <div class="media-body">
+                                <a href="single-blog.html">
+                                    <h3>Asteroids telescope</h3>
+                                </a>
+                                <p>01 Hours ago</p>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside class="single_sidebar_widget tag_cloud_widget">
+                        <h4 class="widget_title">Tag Clouds</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="#">project</a>
+                            </li>
+                            <li>
+                                <a href="#">love</a>
+                            </li>
+                            <li>
+                                <a href="#">technology</a>
+                            </li>
+                            <li>
+                                <a href="#">travel</a>
+                            </li>
+                            <li>
+                                <a href="#">restaurant</a>
+                            </li>
+                            <li>
+                                <a href="#">life style</a>
+                            </li>
+                            <li>
+                                <a href="#">design</a>
+                            </li>
+                            <li>
+                                <a href="#">illustration</a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <aside class="single_sidebar_widget instagram_feeds">
+                        <h4 class="widget_title">Instagram Feeds</h4>
+                        <ul class="instagram_row flex-wrap">
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_5.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_6.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_7.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_8.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_9.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img class="img-fluid" src="assets/img/post/post_10.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <aside class="single_sidebar_widget newsletter_widget">
+                        <h4 class="widget_title">Newsletter</h4>
+                        <form action="#">
+                            <div class="form-group">
+                                <input type="email" class="form-control" onfocus="this.placeholder = ''"
+                                       onblur="this.placeholder = 'Enter email'" placeholder='Enter email' required>
+                            </div>
+                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                    type="submit">
+                                Subscribe
+                            </button>
+                        </form>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ Blog Area end =================-->
+<div class="popup" id="popup" style="visibility: hidden">
+    <div class="popup-content">
+        <div class="popup-top">
+            <p>Đánh giá</p>
+            <div class="close-btn" onclick="removePopup()" style="cursor: pointer">
+                <i class="fas fa-times"></i>
+                Đóng
+            </div>
+        </div>
+        <hr />
+        <div class="box-cmt-popup">
+            <div class="info-pro">
+                <div class="img-cmt">
+                    <img src="~/images/@Model.NewsPreviewImage" />
+                </div>
+                <div class="text-pro">
+                    <h6>@Model.NewsTitle</h6>
+                </div>
+            </div>
+
+
+            <form id="evalForm" asp-controller="Evaluation" asp-action="CreateEvaluation" asp-route-newsId="@Model.NewsId" method="post">
+                <input type="hidden" id="rateRetriever" name="rateNum" />
+                <div class="select-star">
+                    <ul id="rateNum">
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(1)" id="cmt_1"></i>
+                            <p>Rất tệ</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(2)" id="cmt_2"></i>
+                            <p>Tệ</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(3)" id="cmt_3"></i>
+                            <p>Bình thường</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(4)" id="cmt_4"></i>
+                            <p>Tốt</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(5)" id="cmt_5"></i>
+                            <p>Rất tốt</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <textarea name="content" rows="4" placeholder="Mời bạn chia sẻ thêm một số cảm nhận về sản phẩm ..." required></textarea>
+                <div class="list-input">
+                    <input type="text" name="customerName" placeholder="Họ và tên (bắt buộc)" required />
+                    <input type="email" name="email" placeholder="Email (bắt buộc)" required />
+                </div>
+                <button onclick="removePopup()">Gửi đánh giá ngay</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function reply(evaluationId) {
+        var rep = document.getElementById("eval_" + evaluationId).style.display = "block";
+        //document.getElementById('reply').style.display = 'block';
+    }
+
+    function removePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.visibility = "hidden";
+    }
+
+    function openPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.visibility = "visible";
+        //popupclassList.removeAttr("style");
+    }
+
+    function selectStar(value) {
+        // remove all shining stars when user rechoose star rate
+        removeAllShineStars();
+        for (let i = 1; i <= value; i++) {
+            var iTag = document.getElementById('cmt_' + i);
+            iTag.classList.add("shine");
+        }
+        document.getElementById('rateRetriever').value = value;
+    }
+
+    function removeAllShineStars() {
+        for (let i = 1; i <= 5; i++) {
+            var iTag = document.getElementById('cmt_' + i);
+            iTag.classList.remove("shine");
+        }
+    }
+
+
+</script>
+
+<script src="~/assets/js/custom/modal.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script type="text/javascript">
+    var frm = $('#evalForm');
+    frm.submit(function (e) {
+        e.preventDefault();
+
+        $.ajax({
+            //type: frm.attr('method'),
+            //url: frm.attr('action'),
+            type: frm.attr('method'),
+            url: frm.attr('action'),
+            data: frm.serialize(),
+            dataType: "text",
+            success: function (data) {
+                var ret = JSON.parse(data);
+
+                // Create the outermost div with class "comment"
+                const commentDiv = document.createElement('div');
+                commentDiv.className = 'comment';
+
+                // Create the HTML structure using template literals and chaining
+                commentDiv.innerHTML = `
+                            <div class="comment-top">
+                                    <p>${ret[0].UserName}</p>
+                            </div>
+                            <div class="comment-rate">
+                                        ${Array.from({ length: 5 }, (_, i) => `<i class="fas fa-star ${ret[0].Rating >= i + 1 ? 'shine' : 'no-shine'}"></i>`).join('')}
+                            </div>
+                            <div class="comment-content">
+                                        <p>${ret[0].Content}</p>
+                            </div>
+                            <div class="comment-click">
+                                    <div class="comment-on-click" data-evaluation-id="${ret[0].EvaluationId}">
+                                    <i class="far fa-comment"></i>
+                                    <span>Thảo luận</span>
+                                </div>
+                                    <div class="reply" id="eval_${ret[0].EvaluationId}">
+                                    <input type="text" placeholder="Nhập thảo luận của bạn">
+                                    <a href="">GỬI</a>
+                                </div>
+                            </div>
+                            <hr />
+                        `;
+
+                // Add event listener using event delegation
+                commentDiv.addEventListener('click', function (event) {
+                    if (event.target.classList.contains('comment-on-click')) {
+                        const evaluationId = event.target.getAttribute('data-evaluation-id');
+                        reply(evaluationId);
+                    }
+                });
+
+                // Add the commentListDiv to the body or any other element on the page
+                document.getElementById('eval-area').appendChild(commentDiv);
+            },
+            error: function (data) {
+                console.log('An error occurred.');
+                console.log(data);
+            },
+        });
+    });
+</script>

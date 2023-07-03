@@ -22,7 +22,7 @@ namespace ProductNews.Models
         public DateTime? DateOfBirth { get; set; }
         public string? PhoneNumber { get; set; }
         public string? Avatar { get; set; }
-        public bool? Status { get; set; }
+        public bool? IsDelete { get; set; }
 
         public virtual ICollection<News> NewsCreatedByNavigations { get; set; }
         public virtual ICollection<NewsGroup> NewsGroupCreatedByNavigations { get; set; }

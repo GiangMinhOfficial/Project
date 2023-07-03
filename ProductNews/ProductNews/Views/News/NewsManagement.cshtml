@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["title"] = "Quản lý tin tức";
+}
+@model List<News>
+
+<section class="blog_area single-post-area section-padding">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-12 mb-3">
+                <div class="row">
+                    <div class="col-sm-10"></div>
+                    <div class="col-sm-2">
+                        <form asp-controller="News" asp-action="CreateNews" method="get">
+                            <button type="submit" class="btn btn-primary">Add News</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ảnh</th>
+                        <th scope="col">Nhóm tin</th>
+                        <th scope="col">Tiêu đề</th>
+                        <th scope="col">Lượt truy cập</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int i = 0;
+                    }
+                    @foreach (News news in Model)
+                    {
+                        <tr>
+                            <th scope="row">@(++i)</th>
+                            <td>
+                                <img src="~/images/@news.NewsPreviewImage" class="img-thumbnail" style="max-width: 50px">
+                            </td>
+                            <td>@news.NewsGroup.NewsGroupName</td>
+                            <td>@news.NewsTitle</td>
+                            <td>@news.View</td>
+                            <td>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Fancybox CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.1/jquery.fancybox.css">
+
+<!-- Fancybox JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.1/jquery.fancybox.min.js"></script>
+
+<script>
+
+    $(document).ready(function () {
+        preview();
+    });
+
+    function preview() {
+        $('td').find('img').each(function () {
+            $(this).wrap('<a data-fancybox="gallery" href="' + $(this).attr('src') + '"></a>');
+        });
+
+        // Kích hoạt Fancybox
+        $('[data-fancybox="gallery"]').fancybox({
+            buttons: [
+                'zoom',
+                'slideShow',
+                'fullScreen',
+                'close'
+            ],
+            loop: true
+        });
+    }
+</script>
+

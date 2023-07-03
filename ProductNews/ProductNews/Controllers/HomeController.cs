@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Versioning;
 using ProductNews.Models;
+using System.Diagnostics;
 
 namespace ProductNews.Controllers
 {
@@ -8,19 +10,14 @@ namespace ProductNews.Controllers
     {
         private readonly ProductNewsContext _context = new();
 
-        //public HomeController(ProductNewsContext context)
-        //{
-        //    _context = context;
-        //}
-
         public IActionResult Index()
         {
             //var news = _context.News.ToList().DistinctBy(x => x.NewTitle).Take(3).ToList();
-            var firstNews = _context.News.Include(x => x.NewsGroup).Take(_context.News.ToList().Count - 2).ToList();
-            var lastNews = _context.News.Include(x => x.NewsGroup).Skip(_context.News.ToList().Count - 2).Take(2).ToList();
+            var firstNewsList = _context.News.Where(x => x.IsDelete == false).Include(x => x.NewsGroup).Include(x => x.CreatedByNavigation).Take(_context.News.ToList().Count - 2).ToList();
+            var lastNewsList = _context.News.Where(x => x.IsDelete == false).Include(x => x.NewsGroup).Include(x => x.CreatedByNavigation).Skip(_context.News.ToList().Count - 2).Take(2).ToList();
 
-            ViewBag.firstNews = firstNews;
-            ViewBag.lastNews = lastNews;
+            ViewBag.firstNews = firstNewsList;
+            ViewBag.lastNews = lastNewsList;
             return View();
         }
     }

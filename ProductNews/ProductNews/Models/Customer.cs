@@ -5,6 +5,12 @@ namespace ProductNews.Models
 {
     public partial class Customer
     {
+        public Customer()
+        {
+            Comments = new HashSet<Comment>();
+            Evaluations = new HashSet<Evaluation>();
+        }
+
         public int CustomerId { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
@@ -17,6 +23,9 @@ namespace ProductNews.Models
         public DateTime? CreatedDate { get; set; }
         public string? Avatar { get; set; }
         public string? ModifiedHistory { get; set; }
-        public bool? Status { get; set; }
+        public bool? IsDelete { get; set; }
+
+        public virtual ICollection<Comment> Comments { get; set; }
+        public virtual ICollection<Evaluation> Evaluations { get; set; }
     }
 }

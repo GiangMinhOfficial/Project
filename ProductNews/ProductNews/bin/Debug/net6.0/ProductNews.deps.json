@@ -8,12 +8,21 @@
     ".NETCoreApp,Version=v6.0": {
       "ProductNews/1.0.0": {
         "dependencies": {
+          "HtmlAgilityPack": "1.11.48",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.14"
         },
         "runtime": {
           "ProductNews.dll": {}
+        }
+      },
+      "HtmlAgilityPack/1.11.48": {
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "assemblyVersion": "1.11.48.0",
+            "fileVersion": "1.11.48.0"
+          }
         }
       },
       "Humanizer/2.14.1": {
@@ -2456,6 +2465,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "HtmlAgilityPack/1.11.48": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BTYfqMoTtnlUz5hqJZ3qxh/SDWMtJAulcz2vIr2TRj5BhfdJZD1E1HSpNI9rvIQiYJzl2xoVtCNzCcANjzbScQ==",
+      "path": "htmlagilitypack/1.11.48",
+      "hashPath": "htmlagilitypack.1.11.48.nupkg.sha512"
     },
     "Humanizer/2.14.1": {
       "type": "package",

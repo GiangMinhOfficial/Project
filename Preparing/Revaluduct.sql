@@ -1,5 +1,6 @@
---create database ProductNews
+﻿--create database ProductNews
 --use ProductNews
+--drop database ProductNews
 
 CREATE TABLE Accounts (
 	AccountID int identity PRIMARY KEY,
@@ -11,7 +12,7 @@ CREATE TABLE Accounts (
 	DateOfBirth datetime,
 	PhoneNumber char(10),
 	Avatar nvarchar(max),
-	[Status] bit
+	IsDelete bit
 )
 
 CREATE TABLE NewsGroup (
@@ -22,13 +23,13 @@ CREATE TABLE NewsGroup (
 	CreatedBy int FOREIGN KEY REFERENCES Accounts(AccountID),
 	ModifiedBy int FOREIGN KEY REFERENCES Accounts(AccountID),
 	ModifiedHistory ntext, 
-	[Status] bit
+	IsDelete bit
 )
 
 CREATE TABLE News (
-	[NewID] int identity PRIMARY KEY,
+	[NewsID] int identity PRIMARY KEY,
 	NewsGroupID int FOREIGN KEY REFERENCES NewsGroup(NewsGroupID),
-	NewTitle nvarchar(max),
+	NewsTitle nvarchar(max),
 	NewsHeading nvarchar(max),
 	NewsPreviewImage nvarchar(max),
 	NewsContent ntext,
@@ -38,7 +39,7 @@ CREATE TABLE News (
 	CreatedBy int FOREIGN KEY REFERENCES Accounts(AccountID),
 	ModifiedBy int FOREIGN KEY REFERENCES Accounts(AccountID),
 	ModifiedHistory ntext,
-	[Status] bit
+	IsDelete bit
 )
 
 CREATE TABLE Customers (
@@ -54,5 +55,28 @@ CREATE TABLE Customers (
 	CreatedDate datetime,
 	Avatar nvarchar(max),
 	ModifiedHistory ntext,
-	[Status] bit
+	IsDelete bit
+)
+
+CREATE TABLE Comments (
+	CommentId int identity primary key,
+	[NewsID] int foreign key references News([NewsID]),
+	CustomerId int foreign key references Customers(CustomerID),
+	Content ntext,
+	CreatedDate datetime,
+	UpdatedDate datetime,
+	[Status] int, -- trạng thái cmt, được duyệt hoặc đang duyệt hoặc từ chối duyệt
+	IsDelete bit default 0
+)
+
+CREATE TABLE Evaluation (
+	EvaluationId int identity primary key,
+	[NewsID] int foreign key references News([NewsID]),
+	CustomerId int foreign key references Customers(CustomerID),
+	Content ntext,
+	CreatedDate datetime,
+	UpdatedDate datetime,
+	Rating int check (rating <= 5 and rating >= 1),
+	[Status] int, -- trạng thái cmt, được duyệt hoặc đang duyệt hoặc từ chối duyệt
+	IsDelete bit default 0
 )

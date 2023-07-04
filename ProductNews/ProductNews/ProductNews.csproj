@@ -17,7 +17,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\CmtEval\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\App_Data\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\userfiles\" />

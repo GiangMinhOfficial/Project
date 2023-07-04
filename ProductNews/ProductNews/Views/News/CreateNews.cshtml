@@ -3,7 +3,7 @@
 }
 @model News
 
-<section class="blog_area single-post-area section-padding">
+<section class="section-padding">
     <div class="container">
         <form asp-controller="News" asp-action="CreateNews" method="post" enctype="multipart/form-data">
 
@@ -41,7 +41,8 @@
                 <div class="col-sm-1"></div>
 
                 <div class="col-sm-4">
-                    <div class="rounded pt-3" style="background: #d3d3d369; min-height: 50%">
+                    <div class="rounded pt-3 pl-3 pr-3 pb-3 sol-sm-12" style="background: #d3d3d369; min-height: 15%">
+
                         <div class="form-group">
                             <label asp-for="NewsPreviewImage" class="control-label">Image</label>
                             <input type="file" class="form-control" asp-for="NewsPreviewImage" onchange="loadFile(event)">
@@ -57,13 +58,21 @@
                                 };
                             </script>
                         </div>
+
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="">
+                                    <a asp-controller="News" asp-action="NewsManagement" class="genric-btn danger radius">Cancel</a>
+                                    <button type="submit" class="genric-btn info radius">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div>
-                <button type="submit" class="genric-btn success-border">Success</button>
-            </div>
+
 
         </form>
     </div>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting.Internal;
+using ProductNews.Helpers;
 using ProductNews.Models;
 
 namespace ProductNews.Controllers
@@ -17,6 +18,9 @@ namespace ProductNews.Controllers
             var evaluations = context.Evaluations.Include(x => x.Customer).Where(x => x.NewsId == id).ToList();
             // get news having newsId == given id
             var news = context.News.Include(x => x.NewsGroup).Where(x => x.NewsId == id).FirstOrDefault();
+            news.View += 1;
+            context.News.Update(news);
+            context.SaveChanges();
 
             int? fiveStarPercent = null;
             int? fourStarPercent = null;
@@ -74,17 +78,9 @@ namespace ProductNews.Controllers
         [HttpPost]
         public ActionResult CreateNews(News news, IFormFile NewsPreviewImage)
         {
-            string startupPath = System.IO.Directory.GetCurrentDirectory();
-
-            string startupPath2 = Environment.CurrentDirectory;
-
             if (NewsPreviewImage.Length > 0)
             {
-                string filePath = Path.Combine("./wwwroot/images/", NewsPreviewImage.FileName);
-                using (Stream fileStream = new FileStream(filePath, FileMode.Create, FileAccess.Write))
-                {
-                    NewsPreviewImage.CopyTo(fileStream);
-                }
+                news.NewsPreviewImage = Utility.SaveImage(NewsPreviewImage);
             }
 
             if (ModelState.IsValid)
@@ -93,7 +89,6 @@ namespace ProductNews.Controllers
                 news.ModifiedDate = DateTime.Now;
                 news.CreatedBy = 1;
                 news.ModifiedBy = 1;
-                news.NewsPreviewImage = NewsPreviewImage.FileName;
                 news.IsDelete = false;
                 news.View = 0;
 
@@ -102,6 +97,48 @@ namespace ProductNews.Controllers
 
             context.SaveChanges();
 
+            return RedirectToAction("NewsManagement");
+        }
+
+        public IActionResult EditNews(int newsId)
+        {
+            var newsGroups = context.NewsGroups.ToList();
+            ViewBag.newsGroups = newsGroups;
+
+            var news = context.News.FirstOrDefault(x => x.NewsId == newsId);
+            return View(news);
+        }
+
+        [HttpPost]
+        public IActionResult EditNews(News news, IFormFile NewsPreviewImage)
+        {
+            var oldNews = context.News.FirstOrDefault(x => x.NewsId == news.NewsId);
+
+            if (NewsPreviewImage != null && NewsPreviewImage.Length > 0)
+            {
+                oldNews.NewsPreviewImage = Utility.SaveImage(NewsPreviewImage);
+            }
+
+            oldNews.NewsTitle = news.NewsTitle;
+            oldNews.NewsGroupId = news.NewsGroupId;
+            oldNews.NewsContent = news.NewsContent;
+            oldNews.ModifiedDate = DateTime.Now;
+            oldNews.ModifiedBy = 1;
+
+            context.SaveChanges();
+
+            return RedirectToAction("NewsManagement");
+        }
+
+        public IActionResult DeleteNews(int newsId)
+        {
+            var news = context.News.FirstOrDefault(x => x.NewsId == newsId);
+            if(news != null)
+            {
+                news.IsDelete = true;
+                context.News.Update(news);
+                context.SaveChanges();
+            }
             return RedirectToAction("NewsManagement");
         }
     }

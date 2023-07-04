@@ -1,0 +1,97 @@
+﻿@model News
+@{
+    ViewData["title"] = "Thay đổi tin tức";
+}
+
+<section class="section-padding">
+    <div class="container">
+        <form asp-controller="News" asp-action="EditNews" method="post" enctype="multipart/form-data">
+
+            <input type="hidden" asp-for="NewsId" />
+
+            <div class="row">
+                <div class="col-sm-7 pt-3 pb-3 rounded" style="background: #d3d3d369;">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <div class="form-group">
+                                <label asp-for="@Model.NewsTitle">Title</label>
+                                <input type="text" asp-for="@Model.NewsTitle" class="form-control" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group">
+                                <label asp-for="NewsGroupId">Category</label>
+                                <div class="form-select" id="default-select">
+                                    <select asp-for="NewsGroupId">
+                                        @foreach (NewsGroup newsGroup in ViewBag.newsGroups)
+                                        {
+                                            <option value="@newsGroup.NewsGroupId"
+                                                    selected="@Model.NewsGroupId == @newsGroup.NewsGroupId">
+                                                @newsGroup.NewsGroupName
+                                            </option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="NewsContent" class="control-label"></label>
+                        @*<texarea class="form-control" id="NewsContent" name="news.NewsContent"></texarea>*@
+                        @Html.TextAreaFor(x => x.NewsContent, new { @class = "form-control" })
+                    </div>
+                </div>
+
+                <div class="col-sm-1"></div>
+
+                <div class="col-sm-4">
+                    <div class="rounded pt-3 pl-3 pr-3 pb-2 sol-sm-12" style="background: #d3d3d369; min-height: 15%">
+
+                        <div class="form-group">
+                            <label asp-for="NewsPreviewImage" class="control-label">Image</label>
+                            <input type="file" class="form-control mb-2" onchange="loadFile(event)" value="@Model.NewsPreviewImage">
+                            <img id="output" class="rounded" style="max-width: 100%" src="~/images/@Model.NewsPreviewImage" />
+                            <script>
+                                var loadFile = function (event) {
+                                    var output = document.getElementById('output');
+                                    output.src = URL.createObjectURL(event.target.files[0]);
+                                    console.log(output);
+                                    output.onload = function () {
+                                        URL.revokeObjectURL(output.src); // free memory
+                                    };
+                                };
+                            </script>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row justify-content-center">
+                                <div class="">
+                                    <a asp-controller="News" asp-action="NewsManagement" class="genric-btn danger radius">Cancel</a>
+                                    <button type="submit" class="genric-btn info radius">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </form>
+    </div>
+</section>
+
+@section CkEditor {
+    <script src="~/assets/plugins/ckeditor/ckeditor.js"></script>
+    <script src="~/assets/plugins/ckfinder/ckfinder.js"></script>
+    <script>
+        CKEDITOR.replace('NewsContent', {
+            filebrowserBrowseUrl: '/assets/plugins/ckfinder/ckfinder.html',
+            filebrowserImageBrowseUrl: '/assets/plugins/ckfinder/ckfinder.html?type=Images',
+            filebrowserUploadUrl: '/assets/plugins/ckfinder/connector?command=QuickUpload&type=Files',
+            filebrowserImageUploadUrl: '/assets/plugins/ckfinder/connector?command=QuickUpload&type=Images'
+        });
+    </script>
+}

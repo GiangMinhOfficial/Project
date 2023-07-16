@@ -11,9 +11,11 @@
                 <div class="row">
                     <div class="col-sm-10"></div>
                     <div class="col-sm-2">
-                        <form asp-controller="News" asp-action="CreateNews" method="get">
-                            <button type="submit" class="btn btn-primary">Add News</button>
-                        </form>
+                        @*<form asp-controller="News" asp-action="CreateNews" method="get">*@
+                        <a asp-controller="News" asp-action="CreateNews" class="btn btn-danger">
+                            Add News
+                        </a>
+                        @*</form>*@
                     </div>
                 </div>
             </div>
@@ -43,15 +45,24 @@
                             <td>@news.NewsGroup.NewsGroupName</td>
                             <td>@news.NewsTitle</td>
                             <td>@news.View</td>
-                            <td>
+                            <td style="vertical-align: middle;">
                                 <div style="display: flex; justify-content: space-around">
                                     <a asp-controller="News" asp-action="EditNews" asp-route-newsId="@news.NewsId" style="color: deepskyblue">
                                         <i class="far fa-edit"></i>
                                     </a>
-                                    <a asp-controller="News" asp-action="DeleteNews" asp-route-newsId="@news.NewsId" style="color: deepskyblue"
-                                    onclick="checkDelete(this)">
-                                        <i class="far fa-trash-alt"></i>
-                                    </a>
+                                    @if((bool)@news.IsDelete)
+                                    {
+                                        <a asp-controller="News" asp-action="RestoreNews" asp-route-newsId="@news.NewsId" style="color: deepskyblue"
+                                           onclick="checkRestore(this)">
+                                            <i class="fas fa-undo"></i>
+                                        </a>
+                                    } else
+                                    {
+                                        <a asp-controller="News" asp-action="DeleteNews" asp-route-newsId="@news.NewsId" style="color: deepskyblue"
+                                           onclick="checkDelete(this)">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    }
                                 </div>
                             </td>
                         </tr>
@@ -100,6 +111,14 @@
         
         var isDelete = confirm("Do you want to delete this news?");
         if(!isDelete) {
+            event.preventDefault();
+        }
+    }
+
+    function checkRestore(obj) {
+        
+        var isRestore = confirm("Do you want to restore this news?");
+        if (!isRestore) {
             event.preventDefault();
         }
     }

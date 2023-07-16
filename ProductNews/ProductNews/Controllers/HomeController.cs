@@ -12,9 +12,12 @@ namespace ProductNews.Controllers
 
         public IActionResult Index()
         {
+            var x = _context.News.Where(x => x.IsDelete == false).Include(x => x.NewsGroup)
+                .Include(x => x.CreatedByNavigation);
+            int count = _context.News.Where(x => x.IsDelete == false).ToList().Count;
             //var news = _context.News.ToList().DistinctBy(x => x.NewTitle).Take(3).ToList();
-            var firstNewsList = _context.News.Where(x => x.IsDelete == false).Include(x => x.NewsGroup).Include(x => x.CreatedByNavigation).Take(_context.News.ToList().Count - 2).ToList();
-            var lastNewsList = _context.News.Where(x => x.IsDelete == false).Include(x => x.NewsGroup).Include(x => x.CreatedByNavigation).Skip(_context.News.ToList().Count - 2).Take(2).ToList();
+            var firstNewsList = x.Take(count - 2).ToList();
+            var lastNewsList = x.Skip(count - 2).Take(2).ToList();
 
             ViewBag.firstNews = firstNewsList;
             ViewBag.lastNews = lastNewsList;

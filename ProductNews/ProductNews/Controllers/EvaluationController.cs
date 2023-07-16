@@ -19,7 +19,7 @@ namespace ProductNews.Controllers
         public string CreateEvaluation(int newsId, int rateNum, string content, string customerName, string email)
         {
             // tìm customer có email trên
-            Customer c = new CustomerController(context).CreateCustomer(customerName, email);
+            Customer c = new CustomerController().CreateCustomer(customerName, email);
             // kiểm tra xem liệu có khách hàng này từng đánh giá sp này trước đây không
             Evaluation e = context.Evaluations.Where(x => x.NewsId == newsId && x.Customer.Email == email).FirstOrDefault();
             if (e == null)

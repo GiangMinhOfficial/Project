@@ -244,3 +244,7 @@ D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\obj\Debug\n
 D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\obj\Debug\net6.0\ProductNews.genruntimeconfig.cache
 D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\obj\Debug\net6.0\ref\ProductNews.dll
 D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\bin\Debug\net6.0\ProductNews.dll.config
+D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\obj\Debug\net6.0\ProductNews.MvcApplicationPartsAssemblyInfo.cs
+D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\bin\Debug\net6.0\JetBrains.Annotations.dll
+D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\bin\Debug\net6.0\X.PagedList.dll
+D:\FPT_University\2023_SUMMER\PRN211\Project\ProductNews\ProductNews\bin\Debug\net6.0\X.PagedList.Mvc.Core.dll

@@ -1,6 +1,11 @@
 ﻿@model News
+@using X.PagedList.Mvc.Core;
+@using X.PagedList;
+@using X.PagedList.Web.Common;
 @{
     ViewData["title"] = "Tin tức";
+    IPagedList<Evaluation> pagingEvaluations = ViewBag.pagingEvaluations;
+    ViewBag.newsId = Model.NewsId;
 }
 
 <style>
@@ -48,7 +53,7 @@
 
             .rating-list li .number-star {
                 /*display: inline-flex;
-                                                                                                                                                                                                                                    align-items: baseline;*/
+                                                                                                                                                                                                                                                                                        align-items: baseline;*/
                 margin-right: 5px
             }
 
@@ -112,12 +117,12 @@
         }
 
             /*.comment-btn .button:hover {
-                                                                                                                                                    cursor: pointer;
-                                                                                                                                                    background-color: white;
-                                                                                                                                                    border: 1px solid lightgray;
-                                                                                                                                                    padding: 20px 80px;
-                                                                                                                                                    border-radius: 5px;
-                                                                                                                                                }*/
+                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                        background-color: white;
+                                                                                                                                                                                                        border: 1px solid lightgray;
+                                                                                                                                                                                                        padding: 20px 80px;
+                                                                                                                                                                                                        border-radius: 5px;
+                                                                                                                                                                                                    }*/
 
             .comment-btn .button a {
                 color: #fff !important;
@@ -373,8 +378,7 @@
         margin-top: 10px;
     }
 </style>
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 <!--================Blog Area =================-->
 <section class="blog_area single-post-area section-padding">
@@ -465,10 +469,10 @@
 
                 <hr />
 
-                @if (ViewBag.evaluations != null)
+                @if (pagingEvaluations != null)
                 {
-                    <div id="eval-area">
-                        @foreach (Evaluation eval in ViewBag.evaluations)
+                    @*<div id="eval-area">
+                        @foreach (Evaluation eval in pagingEvaluations)
                         {
                             <div class="comment">
                                 <div class="comment-top">
@@ -502,6 +506,42 @@
                             </div>
                             <hr />
                         }
+                    </div>*@
+
+                    <div class="mb-5">
+                        @*@Html.PagedListPager(pagingEvaluations, page => Url.Action("Index",
+                    new { page }),
+                    new PagedListRenderOptions {
+                    LiElementClasses = new string[] { "page-item" },
+                    PageClasses = new string[] { "page-link" }
+                    })*@
+
+                        <div id="your-partial-view-container">
+                            @{
+                                Html.RenderPartial("_EvaluationPagedDataPartial", pagingEvaluations);
+                            }
+                            <script>
+                                $(function () {
+                                    var container = $('.pagination-container');
+
+                                    // Intercept the click event on pagination links
+                                    container.on('click', '.pagination a', function (e) {
+                                        e.preventDefault();
+
+                                        // Get the URL of the clicked page
+                                        var url = $(this).attr('href');
+                                        console.log(url);
+
+                                        // Perform the AJAX request
+                                        $.get(url, function (data) {
+                                            // Update the partial view with the returned data
+                                            $('#your-partial-view-container').html(data);
+                                        });
+                                    });
+                                });
+                            </script>
+                        </div>
+
                     </div>
                 }
 
@@ -863,7 +903,7 @@
 
 <script src="~/assets/js/custom/modal.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
 <script type="text/javascript">
     var frm = $('#evalForm');
     frm.submit(function (e) {
@@ -885,27 +925,27 @@
 
                 // Create the HTML structure using template literals and chaining
                 commentDiv.innerHTML = `
-                            <div class="comment-top">
-                                    <p>${ret[0].UserName}</p>
-                            </div>
-                            <div class="comment-rate">
-                                        ${Array.from({ length: 5 }, (_, i) => `<i class="fas fa-star ${ret[0].Rating >= i + 1 ? 'shine' : 'no-shine'}"></i>`).join('')}
-                            </div>
-                            <div class="comment-content">
-                                        <p>${ret[0].Content}</p>
-                            </div>
-                            <div class="comment-click">
-                                    <div class="comment-on-click" data-evaluation-id="${ret[0].EvaluationId}">
-                                    <i class="far fa-comment"></i>
-                                    <span>Thảo luận</span>
-                                </div>
-                                    <div class="reply" id="eval_${ret[0].EvaluationId}">
-                                    <input type="text" placeholder="Nhập thảo luận của bạn">
-                                    <a href="">GỬI</a>
-                                </div>
-                            </div>
-                            <hr />
-                        `;
+                                                                                <div class="comment-top">
+                                                                                        <p>${ret[0].UserName}</p>
+                                                                                </div>
+                                                                                <div class="comment-rate">
+                                                                                            ${Array.from({ length: 5 }, (_, i) => `<i class="fas fa-star ${ret[0].Rating >= i + 1 ? 'shine' : 'no-shine'}"></i>`).join('')}
+                                                                                </div>
+                                                                                <div class="comment-content">
+                                                                                            <p>${ret[0].Content}</p>
+                                                                                </div>
+                                                                                <div class="comment-click">
+                                                                                        <div class="comment-on-click" data-evaluation-id="${ret[0].EvaluationId}">
+                                                                                        <i class="far fa-comment"></i>
+                                                                                        <span>Thảo luận</span>
+                                                                                    </div>
+                                                                                        <div class="reply" id="eval_${ret[0].EvaluationId}">
+                                                                                        <input type="text" placeholder="Nhập thảo luận của bạn">
+                                                                                        <a href="">GỬI</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <hr />
+                                                                            `;
 
                 // Add event listener using event delegation
                 commentDiv.addEventListener('click', function (event) {
@@ -925,3 +965,50 @@
         });
     });
 </script>
+
+@*<script>
+    $(function () {
+        var container = $('.pagination-container');
+
+        // Create a function to handle the AJAX request and update the partial view
+        function updatePartialView(url) {
+            $.get(url, function (data) {
+                console.log(url);
+                // Update the partial view with the returned data
+                $('#your-partial-view-container').html(data);
+
+                // Call the function again to reload the script
+                setupPagination();
+            });
+        }
+
+        // Intercept the click event on pagination links
+        container.on('click', '.pagination a', function () {
+            // Get the URL of the clicked page
+            var url = $(this).attr('href');
+
+            // Perform the AJAX request and update the partial view
+            updatePartialView(url);
+
+            // Prevent the event propagation
+            return false;
+        });
+
+        // Initial setup of pagination
+        function setupPagination() {
+            // Add any necessary setup logic here
+            // ...
+
+            // Initialize the pagination logic
+            container.off('click', '.pagination a');
+            container.on('click', '.pagination a', function () {
+                var url = $(this).attr('href');
+                updatePartialView(url);
+                return false;
+            });
+        }
+
+        // Call the initial setup of pagination
+        setupPagination();
+    });
+</script>*@

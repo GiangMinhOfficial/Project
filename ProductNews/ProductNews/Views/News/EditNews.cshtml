@@ -50,7 +50,7 @@
 
                         <div class="form-group">
                             <label asp-for="NewsPreviewImage" class="control-label">Image</label>
-                            <input type="file" class="form-control mb-2" onchange="loadFile(event)" value="@Model.NewsPreviewImage">
+                            <input type="file" class="form-control mb-2" onchange="loadFile(event)" value="@Model.NewsPreviewImage" asp-for="NewsPreviewImage">
                             <img id="output" class="rounded" style="max-width: 100%" src="~/images/@Model.NewsPreviewImage" />
                             <script>
                                 var loadFile = function (event) {

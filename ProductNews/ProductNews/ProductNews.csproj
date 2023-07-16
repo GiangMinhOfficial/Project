@@ -13,10 +13,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.14" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
+    <PackageReference Include="X.PagedList.Mvc.Core" Version="8.4.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Views\Customer\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\App_Data\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\src\CKFinder.Connector.WebApp\userfiles\" />
     <Folder Include="wwwroot\assets\plugins\ckfinder\userfiles\" />

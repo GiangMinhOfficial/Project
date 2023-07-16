@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Extensions;
+using Microsoft.AspNetCore.Mvc;
+using NuGet.Protocol;
 using ProductNews.Models;
 
 namespace ProductNews.Controllers
@@ -6,11 +9,10 @@ namespace ProductNews.Controllers
     public class CustomerController : Controller
     {
 
-        private readonly ProductNewsContext context;
+        private readonly ProductNewsContext context = new();
 
-        public CustomerController(ProductNewsContext context)
+        public CustomerController()
         {
-            this.context = context;
         }
 
         public IActionResult Index()
@@ -22,25 +24,64 @@ namespace ProductNews.Controllers
         {
             Customer c = context.Customers.FirstOrDefault(x => x.Email.Equals(email));
 
-            // tồn tại bug là nếu c != null mà customerName khác với trong db thì cũng không được đổi
-            // nghĩa là customerName không có tác dụng
             if (c == null)
             {
-                c = new Customer()
+                string[] names = customerName.Split(' ');
+                c = NewCustomer(new Customer()
                 {
-                    LastName = customerName,
-                    FirstName = customerName,
-                    Email = email,
-                    UserName = customerName,
-                    IsDelete = false,
-                    CreatedDate = DateTime.Now
-                };
-                context.Customers.Add(c);
+                    LastName = names[0],
+                    FirstName = names[1] ?? "",
+                    Email = email
+                });
             }
 
-            context.SaveChanges();
+            // tồn tại bug là nếu c != null mà customerName khác với trong db thì cũng không được đổi
+            // nghĩa là customerName không có tác dụng
+
+            //c = new Customer()
+            //{
+            //    LastName = customerName,
+            //    FirstName = customerName,
+            //    Email = email,
+            //    UserName = customerName,
+            //    IsDelete = false,
+            //    CreatedDate = DateTime.Now
+            //};
 
             return c;
+        }
+
+        public void Login(Customer c)
+        {
+            Customer oldCustomer = context.Customers.FirstOrDefault(x => x.Email.Equals(c.Email));
+
+            if (oldCustomer == null)
+            {
+                oldCustomer = NewCustomer(c);
+            }
+
+            HttpContext.Session.SetString("customer", c.ToJson());
+        }
+
+        public IActionResult Logout(string url)
+        {
+            HttpContext.Session.Remove("customer");
+            return Redirect(url);
+        }
+
+        private Customer? NewCustomer(Customer c)
+        {
+            Customer oldCustomer = context.Customers.FirstOrDefault(x => x.Email.Equals(c.Email)) ?? new Customer();
+
+            oldCustomer.LastName = c.LastName;
+            oldCustomer.FirstName = c.FirstName;
+            oldCustomer.Email = c.Email;
+            oldCustomer.UserName = c.UserName;
+            oldCustomer.IsDelete = false;
+            oldCustomer.CreatedDate = DateTime.Now;
+            oldCustomer.Avatar = c.Avatar;
+
+            return oldCustomer;
         }
     }
 }

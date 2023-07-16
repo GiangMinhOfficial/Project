@@ -1,4 +1,7 @@
-﻿<!-- Preloader Start -->
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!-- Preloader Start -->
 <div id="preloader-active">
     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="preloader-inner position-relative">
@@ -26,7 +29,18 @@
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-date">
-                                    <li><span class="flaticon-calendar"></span> +880166 253 232</li>
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("admin") != null)
+                                    {
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="SignOut">Sign Out</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li>
+                                            <a asp-controller="Admin" asp-action="SignIn">Sign In</a>
+                                        </li>
+                                    }
                                 </ul>
                             </div>
                         </div>
@@ -66,15 +80,25 @@
                                         <li><a href="about.html">about</a></li>
                                         <li><a href="categori.html">Category</a></li>
                                         <li><a href="latest_news.html">Latest News</a></li>
-                                        <li>
-                                            <a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog_details.html">Blog Details</a></li>
-                                                <li><a href="elements.html">Element</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        @if (HttpContextAccessor.HttpContext.Session.GetString("customer") == null)
+                                        {
+                                            <li>
+                                                <a href="#">Log In</a>
+                                                <ul class="submenu">
+                                                    <li>
+                                                        <div id="buttonDiv"></div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        }
+
+                                        @if (HttpContextAccessor.HttpContext.Session.GetString("customer") != null)
+                                        {
+                                            <li><a asp-controller="Customer" asp-action="Logout" onclick="logout(this)">Log Out</a></li>
+                                        }
+                                        @**@
+                                        @*<li><a href="contact.html">Contact</a></li>*@
+                                        @*<li><a asp-controller="News" asp-action="NewsManagement">Manager</a></li>*@
                                     </ul>
                                 </nav>
                             </div>
@@ -105,3 +129,59 @@
     </div>
     <!-- Header End -->
 </header>
+
+
+@*START google sign-in*@
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+    function handleCredentialResponse(response) {
+        var user = parseJwt(response.credential);
+        $.ajax({
+            type: 'POST',
+            url: '/Customer/Login',
+            data: { email: user.email, firstName: user.given_name, lastName: user.family_name, username: user.name, avatar: user.picture },
+            dataType: "text",
+            success: function (data) {
+                console.log(data);
+                location.reload();
+            }
+        });
+    }
+
+    window.onload = function () {
+        google.accounts.id.initialize({
+            client_id: "402411054593-bih1d0ce9chi1453ae6ugvpcavu2f228.apps.googleusercontent.com",
+            callback: handleCredentialResponse
+        });
+        google.accounts.id.renderButton(
+            document.getElementById("buttonDiv"),
+            { theme: "filled_blue", size: "large", shape: "pill", width: 100 }  // customization attributes
+        );
+
+        var url = window.location.href;
+        if (url == "https://localhost:7164/" || url.includes("Home") || url.includes("Home/Index")) {
+            google.accounts.id.prompt(); // also display the One Tap dialog
+        }
+    }
+
+    function parseJwt(token) {
+        var base64Url = token.split('.')[1];
+        var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        var jsonPayload = decodeURIComponent(atob(base64).split('').map(function (c) {
+            return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+        }).join(''));
+
+        return JSON.parse(jsonPayload);
+    };
+
+
+</script>
+@*END google sign-in*@
+
+<script>
+    function logout(obj) {
+        console.log(window.location.href);
+        var url = window.location.href;
+        obj.href += '?url=' + url;
+    }
+</script>

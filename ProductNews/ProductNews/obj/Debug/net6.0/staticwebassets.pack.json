@@ -853,6 +853,502 @@
       "PackagePath": "staticwebassets\\assets\\js\\wow.min.js"
     },
     {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\login\\css\\main.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\css\\util.css",
+      "PackagePath": "staticwebassets\\assets\\login\\css\\util.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\WebFont\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\Linearicons-Free-v1.0.0\\icon-font.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\HELP-US-OUT.txt"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\animated.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\animated.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\bordered-pulled.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\core.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\core.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\fixed-width.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\font-awesome.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\icons.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\icons.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\larger.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\larger.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\list.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\list.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\mixins.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\mixins.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\path.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\path.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\rotated-flipped.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\screen-reader.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\stacked.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\stacked.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\variables.less",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\less\\variables.less"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_animated.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_bordered-pulled.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_core.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_core.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_fixed-width.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_icons.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_larger.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_list.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_list.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_path.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_path.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_rotated-flipped.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_stacked.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\_variables.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\font-awesome-4.7.0\\scss\\font-awesome.scss"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Black.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Italic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Italic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Light.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Medium.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-Thin.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-Thin.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\Montserrat-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\Montserrat-ThinItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\montserrat\\OFL.txt",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\montserrat\\OFL.txt"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Black.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Black.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-BlackItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-BlackItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Bold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-BoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-BoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-ExtraBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-ExtraBold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-ExtraBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-ExtraLight.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-ExtraLight.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-ExtraLightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Italic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Italic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Light.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Light.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-LightItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-LightItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Medium.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Medium.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-MediumItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-MediumItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Regular.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Regular.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-SemiBold.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-SemiBold.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-SemiBoldItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-Thin.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-Thin.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\fonts\\poppins\\Poppins-ThinItalic.ttf",
+      "PackagePath": "staticwebassets\\assets\\login\\fonts\\poppins\\Poppins-ThinItalic.ttf"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\images\\bg-01.jpg",
+      "PackagePath": "staticwebassets\\assets\\login\\images\\bg-01.jpg"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\images\\icons\\favicon.ico",
+      "PackagePath": "staticwebassets\\assets\\login\\images\\icons\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\images\\icons\\icon-google.png",
+      "PackagePath": "staticwebassets\\assets\\login\\images\\icons\\icon-google.png"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\images\\icons\\map-marker.png",
+      "PackagePath": "staticwebassets\\assets\\login\\images\\icons\\map-marker.png"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\images\\icons\\symbol-01.png",
+      "PackagePath": "staticwebassets\\assets\\login\\images\\icons\\symbol-01.png"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\js\\main.js",
+      "PackagePath": "staticwebassets\\assets\\login\\js\\main.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\animate\\animate.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\animate\\animate.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\animsition\\css\\animsition.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\animsition\\css\\animsition.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\animsition\\css\\animsition.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\animsition\\css\\animsition.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\animsition\\js\\animsition.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\animsition\\js\\animsition.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\animsition\\js\\animsition.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\animsition\\js\\animsition.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\js\\popper.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\js\\popper.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\js\\popper.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\bootstrap\\js\\tooltip.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\bootstrap\\js\\tooltip.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\countdowntime\\countdowntime.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\countdowntime\\countdowntime.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\css-hamburgers\\hamburgers.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\css-hamburgers\\hamburgers.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\css-hamburgers\\hamburgers.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\css-hamburgers\\hamburgers.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\daterangepicker\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\daterangepicker\\daterangepicker.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\daterangepicker\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\daterangepicker\\daterangepicker.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\daterangepicker\\moment.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\daterangepicker\\moment.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\daterangepicker\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\daterangepicker\\moment.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\jquery\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\jquery\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\perfect-scrollbar\\perfect-scrollbar.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\perfect-scrollbar\\perfect-scrollbar.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\perfect-scrollbar\\perfect-scrollbar.min.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\select2\\select2.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\select2\\select2.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\select2\\select2.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\select2\\select2.js"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\select2\\select2.min.css",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\select2\\select2.min.css"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\login\\vendor\\select2\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets\\login\\vendor\\select2\\select2.min.js"
+    },
+    {
       "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\assets\\plugins\\ckeditor\\CHANGES.md",
       "PackagePath": "staticwebassets\\assets\\plugins\\ckeditor\\CHANGES.md"
     },

@@ -1,0 +1,73 @@
+﻿@using X.PagedList.Mvc.Core;
+@using X.PagedList.Web.Common;
+@model X.PagedList.IPagedList<Evaluation>
+@{
+    int id = (int)ViewBag.newsId;
+}
+
+@foreach (Evaluation eval in Model)
+{
+    <div class="comment">
+        <div class="comment-top">
+            <p>@eval.Customer.UserName</p>
+        </div>
+        <div class="comment-rate">
+            <i class="fas fa-star @(eval.Rating >= 1 ? "shine" : "no-shine")"></i>
+            <i class="fas fa-star @(eval.Rating >= 2 ? "shine" : "no-shine")"></i>
+            <i class="fas fa-star @(eval.Rating >= 3 ? "shine" : "no-shine")"></i>
+            <i class="fas fa-star @(eval.Rating >= 4 ? "shine" : "no-shine")"></i>
+            <i class="fas fa-star @(eval.Rating >= 5 ? "shine" : "no-shine")"></i>
+        </div>
+
+        <div class="comment-content">
+            <p>
+                @eval.Content
+            </p>
+        </div>
+
+        <div class="comment-click">
+            <div class="comment-on-click" onclick="reply(@eval.EvaluationId)">
+                <i class="far fa-comment"></i>
+                <span>Thảo luận</span>
+            </div>
+            <div class="reply" id="eval_@eval.EvaluationId">
+                <input type="text" placeholder="Nhập thảo luận của bạn">
+                <a href="">GỬI</a>
+            </div>
+        </div>
+
+    </div>
+    <hr />
+}
+
+<div class="pagination-container">
+    @Html.PagedListPager(Model, page => Url.Action("GetEvaluationPagedDate", new { page, id=id }),
+    new PagedListRenderOptions {
+    DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+    DisplayLinkToLastPage = PagedListDisplayMode.Always,
+    LiElementClasses = new string[] { "page-item" },
+    PageClasses = new string[] { "page-link" }
+    })
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+    $(function () {
+        var container = $('.pagination-container');
+
+        // Intercept the click event on pagination links
+        container.on('click', '.pagination a', function (e) {
+            e.preventDefault();
+
+            // Get the URL of the clicked page
+            var url = $(this).attr('href');
+            console.log(url);
+
+            // Perform the AJAX request
+            $.get(url, function (data) {
+                // Update the partial view with the returned data
+                $('#your-partial-view-container').html(data);
+            });
+        });
+    });
+</script>

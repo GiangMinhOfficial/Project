@@ -1,5 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProductNews.Helpers;
 using ProductNews.Models;
+using System.Drawing.Printing;
+using X.PagedList;
 
 namespace ProductNews.Controllers
 {
@@ -33,6 +37,15 @@ namespace ProductNews.Controllers
             context.SaveChanges();
 
             return RedirectToAction("Index", "News", new { id = newsId });
+        }
+
+        public IActionResult GetCommentPagedList(int? page, int id)
+        {
+            page = page ?? 1;
+            var pageSize = Constant.PAGE_SIZE;
+            var pagedData = context.Comments.Include(x => x.Customer).Where(x => x.NewsId == id).ToPagedList((int)page, pageSize);
+            ViewBag.newsId = id;
+            return PartialView("_CommentPagedDataPartial", pagedData);
         }
     }
 }

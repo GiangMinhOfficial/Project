@@ -27,26 +27,18 @@ namespace ProductNews.Controllers
             if (c == null)
             {
                 string[] names = customerName.Split(' ');
+
                 c = NewCustomer(new Customer()
                 {
                     LastName = names[0],
-                    FirstName = names[1] ?? "",
-                    Email = email
+                    FirstName = names.Length >= 2 ? string.Join("", names[1..]) : names[0],
+                    Email = email,
+                    UserName = customerName,
+                    IsDelete = false,
+                    CreatedDate = DateTime.Now
                 });
+
             }
-
-            // tồn tại bug là nếu c != null mà customerName khác với trong db thì cũng không được đổi
-            // nghĩa là customerName không có tác dụng
-
-            //c = new Customer()
-            //{
-            //    LastName = customerName,
-            //    FirstName = customerName,
-            //    Email = email,
-            //    UserName = customerName,
-            //    IsDelete = false,
-            //    CreatedDate = DateTime.Now
-            //};
 
             return c;
         }

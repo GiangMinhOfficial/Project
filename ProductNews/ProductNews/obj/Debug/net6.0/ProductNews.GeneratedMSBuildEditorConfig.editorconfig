@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU2lnbkluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/Comment/_CommentPagedDataPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tbWVudFxfQ29tbWVudFBhZ2VkRGF0YVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/NewsGroup/_GroupOfNewsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c0dyb3VwXF9Hcm91cE9mTmV3c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/News/CreateNews.cshtml]
@@ -42,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/News/_EvaluationPagedDataPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xfRXZhbHVhdGlvblBhZ2VkRGF0YVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/News/_RecentNewsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xfUmVjZW50TmV3c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FPT_University/2023_SUMMER/PRN211/Project/ProductNews/ProductNews/Views/Shared/_FooterPartialView.cshtml]

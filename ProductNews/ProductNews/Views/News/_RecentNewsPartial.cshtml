@@ -1,0 +1,30 @@
+﻿@model List<News>
+@{
+    int? currentNewsId = ViewBag.newsId;
+}
+
+
+<aside class="single_sidebar_widget popular_post_widget">
+    <h3 class="widget_title">Recent News</h3>
+    @foreach (News n in Model)
+    {
+        <div class="media post_item">
+            <img src="~/images/@n.NewsPreviewImage" alt="post" style="max-width: 80px">
+            <div class="media-body">
+                <a asp-action="Index" asp-route-id="@n.NewsId" asp-route-currentNewsId="@currentNewsId">
+                    <h3>
+                        @if (n.NewsTitle.Length > 20)
+                        {
+                            @n.NewsTitle.Substring(0, 20) <p style="display: inline-block">...</p>
+                        }
+                        else
+                        {
+                            @n.NewsTitle
+                        }
+                    </h3>
+                </a>
+                <p>@n.CreatedDate</p>
+            </div>
+        </div>
+    }
+</aside>

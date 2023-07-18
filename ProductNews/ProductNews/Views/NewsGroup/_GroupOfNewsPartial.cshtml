@@ -1,0 +1,19 @@
+﻿
+@model List<NewsGroup>
+
+<aside class="single_sidebar_widget post_category_widget">
+    <h4 class="widget_title">Group of News</h4>
+    <ul class="list cat-list">
+
+        @foreach (NewsGroup ng in Model)
+        {
+            <li>
+                <a href="#" class="d-flex">
+                    <p>@ng.NewsGroupName</p>
+                    <p>(@ng.News.Count)</p>
+                </a>
+            </li>
+        }
+
+    </ul>
+</aside>

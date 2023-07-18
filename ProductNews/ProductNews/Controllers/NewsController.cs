@@ -10,7 +10,6 @@ namespace ProductNews.Controllers
     public class NewsController : Controller
     {
         private readonly ProductNewsContext context = new();
-        private readonly int PAGE_SIZE = 5;
 
         public IActionResult Index(int id, int? page)
         {
@@ -19,7 +18,7 @@ namespace ProductNews.Controllers
             {
                 page = 1;
             }
-            int pageSize = PAGE_SIZE;
+            int pageSize = Constant.PAGE_SIZE;
 
             // get all comments having newsid equal to id
             var comments = context.Comments.Include(x => x.Customer).Where(x => x.NewsId == id).ToList();
@@ -33,14 +32,13 @@ namespace ProductNews.Controllers
 
             evaluate(evaluations);
 
-
-            if (comments.Count > 0)
-            {
-                ViewBag.comments = comments;
-            }
-
             ViewData["content"] = news.NewsContent;
-            ViewData["pagingEvaluations"] = evaluations.ToPagedList((int)page, pageSize);
+            ViewData["pagingEvaluations"] =evaluations.ToPagedList((int)page, pageSize);
+            ViewData["pagingComments"] = comments.ToPagedList((int)page, pageSize);
+            ViewData["recentNews"] = context.News.Where(x => x.NewsId != news.NewsId)
+                .OrderByDescending(x => x.CreatedDate)
+                .Take(Constant.NUMBER_OF_RECENT_NEWS).ToList();
+            ViewData["newsGroups"] = context.NewsGroups.Take(Constant.NUMBER_OF_GROUP_NEWS).ToList();
 
             return View(news);
         }
@@ -67,7 +65,7 @@ namespace ProductNews.Controllers
                 twoStarPercent = evaluations.Where(x => x.Rating == 2).Count() * 100 / evaluations.Count();
                 oneStarPercent = evaluations.Where(x => x.Rating == 1).Count() * 100 / evaluations.Count();
 
-                ViewBag.evaluations = evaluations;
+                //ViewBag.evaluations = evaluations;
             }
 
             ViewData["totalStars"] = totalStars;
@@ -212,10 +210,16 @@ namespace ProductNews.Controllers
         public IActionResult GetEvaluationPagedDate(int? page, int id)
         {
             page = page ?? 1;
-            var pageSize = PAGE_SIZE;
+            var pageSize = Constant.PAGE_SIZE;
             var pagedData = context.Evaluations.Include(x => x.Customer).Where(x => x.NewsId == id).ToPagedList((int)page, pageSize);
             ViewBag.newsId = id;
             return PartialView("_EvaluationPagedDataPartial", pagedData);
         }
+
+        //public IActionResult GetRecentNewsPartialView(int id, int? currentNewsId)
+        //{
+        //    var recentNews = context.News.OrderByDescending(x => x.CreatedDate).Where(x => x.NewsId != currentNewsId).Take(4).ToList();
+        //    return PartialView("_RecentNewsPartial", recentNews);
+        //}
     }
 }

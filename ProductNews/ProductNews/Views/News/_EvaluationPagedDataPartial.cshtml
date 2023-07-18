@@ -40,15 +40,18 @@
     <hr />
 }
 
-<div class="pagination-container">
-    @Html.PagedListPager(Model, page => Url.Action("GetEvaluationPagedDate", new { page, id=id }),
+@if(Model.Count > 0)
+{
+    <div class="pagination-container">
+        @Html.PagedListPager(Model, page => Url.Action("GetEvaluationPagedDate", new { page, id=id }),
     new PagedListRenderOptions {
     DisplayLinkToFirstPage = PagedListDisplayMode.Always,
     DisplayLinkToLastPage = PagedListDisplayMode.Always,
     LiElementClasses = new string[] { "page-item" },
     PageClasses = new string[] { "page-link" }
     })
-</div>
+    </div>
+}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 <script>
@@ -61,12 +64,17 @@
 
             // Get the URL of the clicked page
             var url = $(this).attr('href');
-            console.log(url);
+            //var currentPageNumber = this.innerHTML;
 
             // Perform the AJAX request
             $.get(url, function (data) {
                 // Update the partial view with the returned data
-                $('#your-partial-view-container').html(data);
+                // nếu không check qua url thì dữ liệu phần phân trang của comment sẽ đè lên phần phân trang của evaluation
+                if (url.includes('GetEvaluationPagedDate')) {
+                    $('#your-partial-view-container').html(data);
+                }
+                console.log(url);
+                //document.getElementById('page').value = currentPageNumber;
             });
         });
     });

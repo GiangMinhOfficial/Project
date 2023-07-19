@@ -24,7 +24,8 @@
 
                     @{
                         ProductNewsContext context = new();
-                        var mostPopulars = context.News.Include(x => x.CreatedByNavigation).OrderByDescending(x => x.View).Take(3).ToList();
+                        var mostPopulars = context.News.Where(x => x.IsDelete == false)
+                        .Include(x => x.CreatedByNavigation).OrderByDescending(x => x.View).Take(3).ToList();
                     }
 
                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">

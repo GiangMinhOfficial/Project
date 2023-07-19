@@ -147,7 +147,7 @@
                                                                     </div>
                                                                     <div class="whats-right-cap">
                                                                         <span class="colorb">@currentNewsGroup.NewsGroupName</span>
-                                                                        <h4><a asp-controller="News" asp-action="Index" asp-route-id="@n.NewsId">Portrait of group of friends ting eat. market in.</a></h4>
+                                                                        <h4><a asp-controller="News" asp-action="Index" asp-route-id="@n.NewsId">@n.NewsTitle</a></h4>
                                                                         <p>@n.CreatedDate?.ToString("D")</p>
                                                                     </div>
                                                                 </div>

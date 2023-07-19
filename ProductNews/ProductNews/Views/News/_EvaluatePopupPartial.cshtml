@@ -1,4 +1,9 @@
-﻿@model News
+﻿@using Newtonsoft.Json;
+@model News
+@{
+    string username = ViewBag.username;
+    string email = ViewBag.email;
+}
 
 <div class="popup" id="popup" style="visibility: hidden">
     <div class="popup-content">
@@ -50,10 +55,10 @@
                 </div>
                 <textarea name="content" rows="4" placeholder="Mời bạn chia sẻ thêm một số cảm nhận về sản phẩm ..." required></textarea>
                 <div class="list-input">
-                    <input type="text" name="customerName" placeholder="Họ và tên (bắt buộc)" required />
-                    <input type="email" name="email" placeholder="Email (bắt buộc)" required />
+                    <input type="text" name="customerName" placeholder="Họ và tên (bắt buộc)" value="@username" required />
+                    <input type="email" name="email" placeholder="Email (bắt buộc)" value="@email" required />
                 </div>
-                <button onclick="removePopup()" id="evaluateBtn">Gửi đánh giá ngay</button>
+                <button type="submit" onclick="sendEvaluateForm()" id="evaluateBtn">Gửi đánh giá ngay</button>
             </form>
         </div>
     </div>
@@ -68,5 +73,30 @@
     function openPopup() {
         var popup = document.getElementById('popup');
         popup.style.visibility = "visible";
+    }
+
+    function sendEvaluateForm() {
+        removePopup();
+        if (document.getElementById('rateRetriever').value == 0) {
+            //document.getElementById('evalForm').submit();
+            event.preventDefault();
+        }
+    }
+
+    function selectStar(value) {
+        // remove all shining stars when user rechoose star rate
+        removeAllShineStars();
+        for (let i = 1; i <= value; i++) {
+            var iTag = document.getElementById('cmt_' + i);
+            iTag.classList.add("shine");
+        }
+        document.getElementById('rateRetriever').value = value;
+    }
+
+    function removeAllShineStars() {
+        for (let i = 1; i <= 5; i++) {
+            var iTag = document.getElementById('cmt_' + i);
+            iTag.classList.remove("shine");
+        }
     }
 </script>

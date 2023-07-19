@@ -1,4 +1,7 @@
-﻿namespace ProductNews.Helpers
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+
+namespace ProductNews.Helpers
 {
     public class Utility
     {
@@ -12,5 +15,17 @@
 
             return image.FileName;
         }
+
+        //public static T GetObjectFromSession<T>(string name, HttpContext httpContext)
+        //{
+        //    string obj = httpContext.Session.GetString(name);
+        //    if (obj != null)
+        //    {
+        //        Object o = JsonConvert.DeserializeObject<T>(obj);
+        //        JObject jObj = obj is JObject ? (JObject)obj : JObject.FromObject(obj);
+        //        return o.to;
+        //    }
+        //    return null;
+        //}
     }
 }

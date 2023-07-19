@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting.Internal;
+using Newtonsoft.Json;
 using ProductNews.Helpers;
 using ProductNews.Models;
 using X.PagedList;
@@ -33,7 +34,7 @@ namespace ProductNews.Controllers
             evaluate(evaluations);
 
             ViewData["content"] = news.NewsContent;
-            ViewData["pagingEvaluations"] =evaluations.ToPagedList((int)page, pageSize);
+            ViewData["pagingEvaluations"] = evaluations.ToPagedList((int)page, pageSize);
             ViewData["pagingComments"] = comments.ToPagedList((int)page, pageSize);
             ViewData["recentNews"] = context.News
                 .Where(x => x.NewsId != news.NewsId && x.IsDelete == false)
@@ -105,7 +106,7 @@ namespace ProductNews.Controllers
             {
                 return RedirectToAction("Index", "Home");
             }
-            return View(context.News.Include(x => x.NewsGroup).ToList());
+            return View(context.News.Include(x => x.NewsGroup).OrderBy(x => x.NewsGroupId).ToList());
         }
 
         public IActionResult CreateNews()
@@ -179,8 +180,7 @@ namespace ProductNews.Controllers
             oldNews.NewsGroupId = news.NewsGroupId;
             oldNews.NewsContent = news.NewsContent;
             oldNews.ModifiedDate = DateTime.Now;
-            oldNews.ModifiedBy = 1;
-            oldNews.View = news.View;
+            oldNews.ModifiedBy = JsonConvert.DeserializeObject<Account>(HttpContext.Session.GetString("admin")).AccountId;
 
             context.SaveChanges();
 

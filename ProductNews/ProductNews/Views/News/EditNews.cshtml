@@ -2,15 +2,18 @@
 @{
     ViewData["title"] = "Thay đổi tin tức";
 }
+<script>
+    console.log(@Model.NewsGroupId);
+</script>
 
 <section class="section-padding">
-    <div class="container">
+    <div class="container" style="max-width: 1400px">
         <form asp-controller="News" asp-action="EditNews" method="post" enctype="multipart/form-data">
 
             <input type="hidden" asp-for="NewsId" />
 
             <div class="row">
-                <div class="col-sm-7 pt-3 pb-3 rounded" style="background: #d3d3d369;">
+                <div class="col-sm-8 pt-3 pb-3 rounded" style="background: #d3d3d369;">
                     <div class="row">
                         <div class="col-sm-8">
                             <div class="form-group">
@@ -21,12 +24,12 @@
                         <div class="col-sm-4">
                             <div class="form-group">
                                 <label asp-for="NewsGroupId">Category</label>
-                                <div class="form-select" id="default-select">
+                                <div class="form-select">
                                     <select asp-for="NewsGroupId">
                                         @foreach (NewsGroup newsGroup in ViewBag.newsGroups)
                                         {
                                             <option value="@newsGroup.NewsGroupId"
-                                                    selected="@Model.NewsGroupId == @newsGroup.NewsGroupId">
+                                                    selected="@(Model.NewsGroupId == newsGroup.NewsGroupId ? "selected" : null)">
                                                 @newsGroup.NewsGroupName
                                             </option>
                                         }
@@ -45,7 +48,7 @@
 
                 <div class="col-sm-1"></div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="rounded pt-3 pl-3 pr-3 pb-2 sol-sm-12" style="background: #d3d3d369; min-height: 15%">
 
                         <div class="form-group">

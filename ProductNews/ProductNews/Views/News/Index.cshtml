@@ -1,15 +1,27 @@
 ﻿@model News
+@using Newtonsoft.Json;
 @using X.PagedList.Mvc.Core;
 @using X.PagedList;
 @using X.PagedList.Web.Common;
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
 @{
-    ViewData["title"] = "Tin tức";
+    ViewData["title"] = Model.NewsTitle;
     IPagedList<Evaluation> pagingEvaluations = ViewBag.pagingEvaluations;
     IPagedList<Comment> pagingComments = ViewBag.pagingComments;
     List<News> recentNews = ViewBag.recentNews;
     List<NewsGroup> newsGroups = ViewBag.newsGroups;
 
     ViewBag.newsId = Model.NewsId;
+
+    String logging = HttpContextAccessor.HttpContext.Session.GetString("customer");
+    string username = "";
+    string email = "";
+    if (logging != null)
+    {
+        Customer? loggingCustomer = JsonConvert.DeserializeObject<Customer?>(logging);
+        username = loggingCustomer.UserName;
+        email = loggingCustomer.Email;
+    }
 }
 
 <style>
@@ -57,7 +69,7 @@
 
             .rating-list li .number-star {
                 /*display: inline-flex;
-                                                                                                                                                                                                                                                                                                                        align-items: baseline;*/
+                                                                                                                                                                                                                                                                                                                                    align-items: baseline;*/
                 margin-right: 5px
             }
 
@@ -121,12 +133,12 @@
         }
 
             /*.comment-btn .button:hover {
-                                                                                                                                                                                                                                        cursor: pointer;
-                                                                                                                                                                                                                                        background-color: white;
-                                                                                                                                                                                                                                        border: 1px solid lightgray;
-                                                                                                                                                                                                                                        padding: 20px 80px;
-                                                                                                                                                                                                                                        border-radius: 5px;
-                                                                                                                                                                                                                                    }*/
+                                                                                                                                                                                                                                                    cursor: pointer;
+                                                                                                                                                                                                                                                    background-color: white;
+                                                                                                                                                                                                                                                    border: 1px solid lightgray;
+                                                                                                                                                                                                                                                    padding: 20px 80px;
+                                                                                                                                                                                                                                                    border-radius: 5px;
+                                                                                                                                                                                                                                                }*/
 
             .comment-btn .button a {
                 color: #fff !important;
@@ -232,9 +244,13 @@
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
+
 <!--================Blog Area =================-->
-<section class="blog_area single-post-area section-padding">
+<section class="blog_area single-post-area section-padding" style="padding-top: 40px;">
     <div class="container">
+
+        <h1 class="pb-5">@Model.NewsTitle</h1>
+
         <div class="row">
             <div class="col-lg-8 posts-list">
                 <div class="single-post">
@@ -258,7 +274,7 @@
                             <i class="fas fa-star @(number >= 3.5 ? "shine" : "no-shine")"></i>
                             <i class="fas fa-star @(number >= 4.5 ? "shine" : "no-shine")"></i>
                         </div>
-                        <p class="rating-total">@(ViewBag.evaluations == null ? 0 : ViewBag.evaluations.Count) đánh giá</p>
+                        <p class="rating-total">@(pagingEvaluations == null ? 0 : pagingEvaluations.TotalItemCount) đánh giá</p>
                     </div>
                     <ul class="rating-list">
                         <li>
@@ -361,6 +377,7 @@
 
                 <div class="comment-form">
                     <h4>Leave a Reply</h4>
+
                     <form class="form-contact comment_form" asp-controller="Comment" asp-action="CreateComment" asp-route-newsId="@Model.NewsId">
                         <div class="row">
                             <div class="col-12">
@@ -371,12 +388,12 @@
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control" name="customerName" id="name" type="text" placeholder="Name" required>
+                                    <input class="form-control" name="customerName" id="name" type="text" placeholder="Name" value="@username" required>
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="form-group">
-                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email" required>
+                                    <input class="form-control" name="email" id="email" type="email" placeholder="Email" value="@email" required>
                                 </div>
                             </div>
                         </div>
@@ -384,6 +401,7 @@
                             <button type="submit" class="button button-contactForm btn_1 boxed-btn">Send Message</button>
                         </div>
                     </form>
+
                 </div>
             </div>
 
@@ -424,34 +442,13 @@
 </section>
 <!--================ Blog Area end =================-->
 <!-- Evaluation Popup -->
-@Html.Partial("_EvaluatePopupPartial", Model);
+@Html.Partial("_EvaluatePopupPartial", Model, new ViewDataDictionary(this.ViewData) { {"username", username}, {"email",email } });
 <!-- End of Evaluation Popup -->
 
 <script>
     //function reply(evaluationId) {
     //    var rep = document.getElementById("eval_" + evaluationId).style.display = "block";
     //}
-
-    
-
-    function selectStar(value) {
-        // remove all shining stars when user rechoose star rate
-        removeAllShineStars();
-        for (let i = 1; i <= value; i++) {
-            var iTag = document.getElementById('cmt_' + i);
-            iTag.classList.add("shine");
-        }
-        document.getElementById('rateRetriever').value = value;
-    }
-
-    function removeAllShineStars() {
-        for (let i = 1; i <= 5; i++) {
-            var iTag = document.getElementById('cmt_' + i);
-            iTag.classList.remove("shine");
-        }
-    }
-
-
 </script>
 
 <script src="~/assets/js/custom/modal.js"></script>

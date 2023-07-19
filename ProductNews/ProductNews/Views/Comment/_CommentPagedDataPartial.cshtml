@@ -4,7 +4,7 @@
 @{
     int id = (int)ViewBag.newsId;
 }
-<h4>@(Model == null ? 0 : Model.Count) Comments</h4>
+<h4>@(Model == null ? 0 : Model.TotalItemCount) Comments</h4>
 
 @foreach (Comment cmt in Model)
 {

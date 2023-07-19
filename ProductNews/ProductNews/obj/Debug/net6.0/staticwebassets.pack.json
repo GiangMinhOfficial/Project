@@ -12597,6 +12597,10 @@
       "PackagePath": "staticwebassets\\assets\\video\\news3.mp4"
     },
     {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\1.webp",
+      "PackagePath": "staticwebassets\\images\\1.webp"
+    },
+    {
       "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\1f98608e-27c2-4c64-8992-c633d600846f.webp",
       "PackagePath": "staticwebassets\\images\\1f98608e-27c2-4c64-8992-c633d600846f.webp"
     },
@@ -12631,6 +12635,10 @@
     {
       "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\f8a71ba6-a793-4f75-96ef-b52f90584b7e",
       "PackagePath": "staticwebassets\\images"
+    },
+    {
+      "Id": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\fulhen3.webp",
+      "PackagePath": "staticwebassets\\images\\fulhen3.webp"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ProductNews.Microsoft.AspNetCore.StaticWebAssets.props",

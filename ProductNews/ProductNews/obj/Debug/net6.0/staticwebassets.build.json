@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tyK9jOVy7w3Tskv7/cqknSHJ5ZIWleSGG7LtUPQ88qA=",
+  "Hash": "76Thalc7Ig3dhooce/09tfkc6Dmo6ioD2Ukjr1+j+34=",
   "Source": "ProductNews",
   "BasePath": "_content/ProductNews",
   "Mode": "Default",
@@ -53550,6 +53550,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\video\\news3.mp4"
     },
     {
+      "Identity": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\1.webp",
+      "SourceId": "ProductNews",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\",
+      "BasePath": "_content/ProductNews",
+      "RelativePath": "images/1.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\1.webp"
+    },
+    {
       "Identity": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\1f98608e-27c2-4c64-8992-c633d600846f.webp",
       "SourceId": "ProductNews",
       "SourceType": "Discovered",
@@ -53701,6 +53718,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\f8a71ba6-a793-4f75-96ef-b52f90584b7e"
+    },
+    {
+      "Identity": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\images\\fulhen3.webp",
+      "SourceId": "ProductNews",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\FPT_University\\2023_SUMMER\\PRN211\\Project\\ProductNews\\ProductNews\\wwwroot\\",
+      "BasePath": "_content/ProductNews",
+      "RelativePath": "images/fulhen3.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\fulhen3.webp"
     }
   ]
 }

@@ -35,12 +35,34 @@ namespace ProductNews.Controllers
             ViewData["content"] = news.NewsContent;
             ViewData["pagingEvaluations"] =evaluations.ToPagedList((int)page, pageSize);
             ViewData["pagingComments"] = comments.ToPagedList((int)page, pageSize);
-            ViewData["recentNews"] = context.News.Where(x => x.NewsId != news.NewsId)
+            ViewData["recentNews"] = context.News
+                .Where(x => x.NewsId != news.NewsId && x.IsDelete == false)
                 .OrderByDescending(x => x.CreatedDate)
                 .Take(Constant.NUMBER_OF_RECENT_NEWS).ToList();
             ViewData["newsGroups"] = context.NewsGroups.Take(Constant.NUMBER_OF_GROUP_NEWS).ToList();
 
             return View(news);
+        }
+
+        public IActionResult List(string search)
+        {
+            search = search ?? string.Empty;
+            search = search.Trim();
+            ViewData["search"] = search;
+
+            ViewData["recentNews"] = context.News
+                .Where(x => x.IsDelete == false)
+                .OrderByDescending(x => x.CreatedDate)
+                .Take(Constant.NUMBER_OF_RECENT_NEWS).ToList();
+
+            ViewData["newsGroups"] = context.NewsGroups.Take(Constant.NUMBER_OF_GROUP_NEWS).ToList();
+
+            var newsList = context.News
+                .Include(x => x.Comments)
+                .Include(x => x.Evaluations)
+                .Where(x => x.NewsTitle!.ToLower().Contains(search.ToLower()))
+                .ToList();
+            return View(newsList);
         }
 
         private void evaluate(List<Evaluation> evaluations)

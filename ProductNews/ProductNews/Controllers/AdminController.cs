@@ -24,6 +24,7 @@ namespace ProductNews.Controllers
             if(admin != null)
             {
                 HttpContext.Session.SetString("admin", admin.ToJson());
+                HttpContext.Session.Remove("customer");
             }
             return RedirectToAction("NewsManagement", "News");
         }

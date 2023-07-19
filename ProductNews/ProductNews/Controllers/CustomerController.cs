@@ -38,7 +38,11 @@ namespace ProductNews.Controllers
                     CreatedDate = DateTime.Now
                 });
 
+                context.Customers.Add(c);
+                context.SaveChanges();
             }
+
+            
 
             return c;
         }
@@ -53,6 +57,7 @@ namespace ProductNews.Controllers
             }
 
             HttpContext.Session.SetString("customer", c.ToJson());
+            HttpContext.Session.Remove("admin");
         }
 
         public IActionResult Logout(string url)

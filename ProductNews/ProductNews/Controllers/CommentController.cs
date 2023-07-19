@@ -25,7 +25,7 @@ namespace ProductNews.Controllers
             Comment cmt = new Comment()
             {
                 NewsId = newsId,
-                Customer = c,
+                CustomerId = c.CustomerId,
                 Content = content,
                 CreatedDate = DateTime.Now,
                 UpdatedDate = DateTime.Now,

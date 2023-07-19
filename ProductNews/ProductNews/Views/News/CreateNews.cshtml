@@ -4,11 +4,11 @@
 @model News
 
 <section class="section-padding">
-    <div class="container">
+    <div class="container" style="max-width: 1400px">
         <form asp-controller="News" asp-action="CreateNews" method="post" enctype="multipart/form-data">
 
             <div class="row">
-                <div class="col-sm-7 pt-3 pb-3 rounded" style="background: #d3d3d369;">
+                <div class="col-sm-8 pt-3 pb-3 rounded" style="background: #d3d3d369;">
                     <div class="row">
                         <div class="col-sm-8">
                             <div class="form-group">
@@ -33,14 +33,14 @@
 
                     <div class="form-group">
                         <label asp-for="NewsContent" class="control-label"></label>
-                        @*<texarea class="form-control" id="NewsContent" name="news.NewsContent"></texarea>*@
+                        @*<texarea class="form-control" id="editor" name="news.NewsContent"></texarea>*@
                         @Html.TextAreaFor(x => x.NewsContent, new { @class = "form-control" })
                     </div>
                 </div>
 
                 <div class="col-sm-1"></div>
 
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="rounded pt-3 pl-3 pr-3 pb-3 sol-sm-12" style="background: #d3d3d369; min-height: 15%">
 
                         <div class="form-group">
@@ -88,3 +88,5 @@
         });
     </script>
 }
+
+

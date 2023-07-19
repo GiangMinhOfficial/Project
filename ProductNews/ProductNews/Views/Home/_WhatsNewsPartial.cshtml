@@ -1,0 +1,56 @@
+﻿@model List<News>
+@{
+    NewsGroup? defaultNewsGroup = ViewBag.defaultNewsGroup;
+    News leftNews = Model.FirstOrDefault();
+    List<News> rightNews = Model.Skip(1).ToList();
+}
+
+
+            <!-- card one -->
+            <div class="tab-pane fade show active" id="nav-@defaultNewsGroup.NewsGroupId" role="tabpanel" aria-labelledby="nav-@defaultNewsGroup.NewsGroupId-tab">
+                <div class="row">
+
+                    <!-- Left Details Caption -->
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="whats-news-single mb-40 mb-40">
+                            <div class="whates-img">
+                                <img src="~/images/@leftNews.NewsPreviewImage" alt="">
+                            </div>
+                            <div class="whates-caption">
+                                <h4><a href="latest_news.html">@leftNews.NewsTitle</a></h4>
+                                <span>by @leftNews.CreatedByNavigation.Username   -   @leftNews.CreatedDate?.ToString("D")</span>
+                                <p>Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right single caption -->
+                    <div class="col-xl-6 col-lg-12">
+                        <div class="row">
+
+                            @foreach (News n in rightNews)
+                            {
+                                <!-- single -->
+                                <div class="col-xl-12 col-lg-6 col-md-6 col-sm-10">
+                                    <div class="whats-right-single mb-20">
+                                        <div class="whats-right-img">
+                                            <img src="~/images/@n.NewsPreviewImage" alt="" style="max-width: 124px; max-height: 104px">
+                                        </div>
+                                        <div class="whats-right-cap">
+                                            <span class="colorb">@defaultNewsGroup.NewsGroupName</span>
+                                            <h4><a href="latest_news.html">Portrait of group of friends ting eat. market in.</a></h4>
+                                            <p>@n.CreatedDate?.ToString("D")</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End Nav Card -->
+    </div>
+</div>

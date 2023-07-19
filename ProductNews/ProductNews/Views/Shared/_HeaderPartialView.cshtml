@@ -23,14 +23,18 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>
-                                    <li class="title"><span class="flaticon-energy"></span> trending-title</li>
-                                    <li>Class property employ ancho red multi level mansion</li>
+                                    <li class="title"><span class="flaticon-energy"></span> product-news</li>
+                                    <li>Find what you want</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
                                 <ul class="header-date">
                                     @if (HttpContextAccessor.HttpContext.Session.GetString("admin") != null)
                                     {
+                                        <li>
+                                            <a asp-controller="News" asp-action="NewsManagement">News Management</a>
+                                        </li>
+                                        <p style="display: inline-block">&#09;|&#09;</p>
                                         <li>
                                             <a asp-controller="Admin" asp-action="SignOut">Sign Out</a>
                                         </li>
@@ -56,11 +60,11 @@
                                 <a href="/"><img src="assets/img/logo/logo.png" alt=""></a>
                             </div>
                         </div>
-                        <div class="col-xl-9 col-lg-9 col-md-9">
-                            <div class="header-banner f-right ">
-                                <img src="assets/img/gallery/header_card.png" alt="">
-                            </div>
+                        @* <div class="col-xl-9 col-lg-9 col-md-9">
+                        <div class="header-banner f-right ">
+                        <img src="assets/img/gallery/header_card.png" alt="">
                         </div>
+                        </div>*@
                     </div>
                 </div>
             </div>
@@ -77,25 +81,25 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                                        <li><a href="about.html">about</a></li>
-                                        <li><a href="categori.html">Category</a></li>
-                                        <li><a href="latest_news.html">Latest News</a></li>
-                                        @if (HttpContextAccessor.HttpContext.Session.GetString("customer") == null)
+                                        @*<li><a href="about.html">about</a></li>*@
+                                        @*<li><a href="categori.html">Category</a></li>*@
+                                        <li><a asp-controller="News" asp-action="List">News</a></li>
+                                        @* @if (HttpContextAccessor.HttpContext.Session.GetString("customer") == null)
                                         {
-                                            <li>
-                                                <a href="#">Log In</a>
-                                                <ul class="submenu">
-                                                    <li>
-                                                        <div id="buttonDiv"></div>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        }
+                                        <li>
+                                        <a href="#">Log In</a>
+                                        <ul class="submenu">
+                                        <li>
+                                        <div id="buttonDiv"></div>
+                                        </li>
+                                        </ul>
+                                        </li>
+                                        }*@
 
-                                        @if (HttpContextAccessor.HttpContext.Session.GetString("customer") != null)
+                                        @*@if (HttpContextAccessor.HttpContext.Session.GetString("customer") != null)
                                         {
                                             <li><a asp-controller="Customer" asp-action="Logout" onclick="logout(this)">Log Out</a></li>
-                                        }
+                                        }*@
                                         @**@
                                         @*<li><a href="contact.html">Contact</a></li>*@
                                         @*<li><a asp-controller="News" asp-action="NewsManagement">Manager</a></li>*@
@@ -104,18 +108,26 @@
                             </div>
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-4">
-                            <div class="header-right f-right d-none d-lg-block">
+                            <div class="header-right f-right d-none d-lg-block main-menu">
                                 <!-- Heder social -->
-                                <ul class="header-social">
-                                    <li><a href="https://www.fb.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li> <a href="#"><i class="fab fa-youtube"></i></a></li>
+                                <ul class="header-social" id="navigation" style="padding-top: 0; padding-bottom: 0">
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("customer") == null)
+                                    {
+                                        <li>
+                                            <a href="#">
+                                                <div id="buttonDiv"></div>
+                                            </a>
+                                        </li>
+                                    }
+                                    @if (HttpContextAccessor.HttpContext.Session.GetString("customer") != null)
+                                    {
+                                        <li><a asp-controller="Customer" asp-action="Logout" onclick="logout(this)">Log Out</a></li>
+                                    }
                                 </ul>
                                 <!-- Search Nav -->
-                                <div class="nav-search search-switch">
+                                @*<div class="nav-search search-switch">
                                     <i class="fa fa-search"></i>
-                                </div>
+                                </div>*@
                             </div>
                         </div>
                         <!-- Mobile Menu -->
@@ -155,7 +167,7 @@
         });
         google.accounts.id.renderButton(
             document.getElementById("buttonDiv"),
-            { theme: "filled_blue", size: "large", shape: "pill", width: 100 }  // customization attributes
+            { theme: "filled_blue", size: "large", shape: "pill", width: 10 }  // customization attributes
         );
 
         var url = window.location.href;

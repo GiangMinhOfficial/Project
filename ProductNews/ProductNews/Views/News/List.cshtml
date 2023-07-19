@@ -1,0 +1,77 @@
+﻿@model List<News>
+@{
+    List<News> recentNews = ViewBag.recentNews;
+    List<NewsGroup> newsGroups = ViewBag.newsGroups;
+    string search = ViewBag.search;
+}
+
+
+<section class="blog_area section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mb-5 mb-lg-0">
+                <div class="blog_left_sidebar">
+
+                    @foreach (News n in Model)
+                    {
+                        <article class="blog_item">
+                            <div class="blog_item_img">
+                                <img class="card-img rounded-0" src="~/images/@n.NewsPreviewImage" alt="">
+                                <a asp-action="Index" asp-route-id="@n.NewsId" class="blog_item_date">
+                                    <h3>@n.CreatedDate.Value.Day</h3>
+                                    <p>@n.CreatedDate.Value.Date.ToString("MMM")</p>
+                                </a>
+                            </div>
+
+                            <div class="blog_details">
+                                <a class="d-inline-block" asp-action="Index" asp-route-id="@n.NewsId">
+                                    <h2>@n.NewsTitle</h2>
+                                </a>
+                                <p>
+                                    That dominion stars lights dominion divide years for fourth have don't stars is that
+                                    he earth it first without heaven in place seed it second morning saying.
+                                </p>
+                                <ul class="blog-info-link">
+                                    <li><a><i class="fa fa-user"></i> @n.Evaluations.Count Evaluations</a></li>
+                                    <li><a><i class="fa fa-comments"></i> @n.Comments.Count Comments</a></li>
+                                </ul>
+                            </div>
+                        </article>
+                    }
+
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="blog_right_sidebar">
+                    <aside class="single_sidebar_widget search_widget">
+                        <form action="List" method="post">
+                            <div class="form-group">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder='Search Keyword'
+                                           onfocus="this.placeholder = ''"
+                                           onblur="this.placeholder = 'Search Keyword'"
+                                           name="search" value="@search">
+                                    <div class="input-group-append">
+                                        <button class="btns" type="button"><i class="ti-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn"
+                                    type="submit">
+                                Search
+                            </button>
+                        </form>
+                    </aside>
+
+                    @{
+                        //Group Of News
+                        Html.RenderPartial("~/Views/NewsGroup/_GroupOfNewsPartial.cshtml", newsGroups);
+
+                        //Recent News
+                        Html.RenderPartial("_RecentNewsPartial", recentNews);
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

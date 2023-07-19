@@ -1,4 +1,5 @@
-﻿<footer>
+﻿@using Microsoft.EntityFrameworkCore;
+<footer>
     <div class="footer-main footer-bg">
         <div class="footer-area footer-padding">
             <div class="container">
@@ -8,7 +9,7 @@
                             <div class="single-footer-caption mb-30">
                                 <!-- logo -->
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a>
+                                    <a asp-controller="Home" asp-action="Index"><img src="~/assets/img/logo/logo2_footer.png" alt=""></a>
                                 </div>
                                 <div class="footer-tittle">
                                     <div class="footer-pera">
@@ -20,41 +21,32 @@
                             </div>
                         </div>
                     </div>
+
+                    @{
+                        ProductNewsContext context = new();
+                        var mostPopulars = context.News.Include(x => x.CreatedByNavigation).OrderByDescending(x => x.View).Take(3).ToList();
+                    }
+
                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
                         <div class="single-footer-caption mb-50">
                             <div class="footer-tittle">
                                 <h4>Popular post</h4>
                             </div>
-                            <!-- Popular post -->
-                            <div class="whats-right-single mb-20">
-                                <div class="whats-right-img">
-                                    <img src="assets/img/gallery/footer_post1.png" alt="">
+
+                            @foreach (News n in mostPopulars)
+                            {
+                                <!-- Popular post -->
+                                <div class="whats-right-single mb-20">
+                                    <div class="whats-right-img">
+                                        <img src="~/images/@n.NewsPreviewImage" alt="" style="max-width: 86px; max-height: 80px">
+                                    </div>
+                                    <div class="whats-right-cap">
+                                        <h4><a asp-controller="News" asp-action="Index" asp-route-id="@n.NewsId">@n.NewsTitle</a></h4>
+                                        <p>@n.CreatedByNavigation.Username  |  @(Math.Round(DateTime.Now.Subtract((DateTime)n.CreatedDate).TotalHours)) hours ago</p>
+                                    </div>
                                 </div>
-                                <div class="whats-right-cap">
-                                    <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                    <p>Jhon  |  2 hours ago</p>
-                                </div>
-                            </div>
-                            <!-- Popular post -->
-                            <div class="whats-right-single mb-20">
-                                <div class="whats-right-img">
-                                    <img src="assets/img/gallery/footer_post2.png" alt="">
-                                </div>
-                                <div class="whats-right-cap">
-                                    <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                    <p>Jhon  |  2 hours ago</p>
-                                </div>
-                            </div>
-                            <!-- Popular post -->
-                            <div class="whats-right-single mb-20">
-                                <div class="whats-right-img">
-                                    <img src="assets/img/gallery/footer_post3.png" alt="">
-                                </div>
-                                <div class="whats-right-cap">
-                                    <h4><a href="latest_news.html">Scarlett’s disappointment at latest accolade</a></h4>
-                                    <p>Jhon  |  2 hours ago</p>
-                                </div>
-                            </div>
+                            }
+                            
                         </div>
                     </div>
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-7">
@@ -67,23 +59,6 @@
                 </div>
             </div>
         </div>
-        <!-- footer-bottom aera -->
-        <div class="footer-bottom-area footer-bg">
-            <div class="container">
-                <div class="footer-border">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-xl-12 ">
-                            <div class="footer-copy-right text-center">
-                                <p>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </footer>

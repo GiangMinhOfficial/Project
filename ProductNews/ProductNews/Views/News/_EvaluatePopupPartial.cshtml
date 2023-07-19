@@ -1,0 +1,72 @@
+﻿@model News
+
+<div class="popup" id="popup" style="visibility: hidden">
+    <div class="popup-content">
+        <div class="popup-top">
+            <p>Đánh giá</p>
+            <div class="close-btn" onclick="removePopup()" style="cursor: pointer">
+                <i class="fas fa-times"></i>
+                Đóng
+            </div>
+        </div>
+        <hr />
+        <div class="box-cmt-popup">
+            <div class="info-pro">
+                <div class="img-cmt">
+                    <img src="~/images/@Model.NewsPreviewImage" />
+                </div>
+                <div class="text-pro">
+                    <h6>@Model.NewsTitle</h6>
+                </div>
+            </div>
+
+
+            <form id="evalForm" asp-controller="Evaluation" asp-action="CreateEvaluation" asp-route-newsId="@Model.NewsId" method="post">
+                <input type="hidden" id="rateRetriever" name="rateNum" />
+                <div class="select-star">
+                    <ul id="rateNum">
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(1)" id="cmt_1"></i>
+                            <p>Rất tệ</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(2)" id="cmt_2"></i>
+                            <p>Tệ</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(3)" id="cmt_3"></i>
+                            <p>Bình thường</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(4)" id="cmt_4"></i>
+                            <p>Tốt</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-star" onclick="selectStar(5)" id="cmt_5"></i>
+                            <p>Rất tốt</p>
+                        </li>
+
+                    </ul>
+                </div>
+                <textarea name="content" rows="4" placeholder="Mời bạn chia sẻ thêm một số cảm nhận về sản phẩm ..." required></textarea>
+                <div class="list-input">
+                    <input type="text" name="customerName" placeholder="Họ và tên (bắt buộc)" required />
+                    <input type="email" name="email" placeholder="Email (bắt buộc)" required />
+                </div>
+                <button onclick="removePopup()" id="evaluateBtn">Gửi đánh giá ngay</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function removePopup() {
+        var popup = document.getElementById('popup');
+        popup.style.visibility = "hidden";
+    }
+
+    function openPopup() {
+        var popup = document.getElementById('popup');
+        popup.style.visibility = "visible";
+    }
+</script>

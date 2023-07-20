@@ -196,7 +196,7 @@
                     </div>
 
                     <!-- Single -->
-                    @if(whatsNews.Count >= 1)
+                    @if (whatsNews.Count >= 1)
                     {
                         <div class="most-recent-single">
                             <div class="most-recent-images">
@@ -209,7 +209,7 @@
                         </div>
                     }
 
-                    @if(whatsNews.Count >= 2)
+                    @if (whatsNews.Count >= 2)
                     {
                         <!-- Single -->
                         <div class="most-recent-single">
@@ -222,7 +222,7 @@
                             </div>
                         </div>
                     }
-                    
+
                 </div>
             </div>
         </div>
@@ -279,7 +279,119 @@
     </div>
 </div>
 <!-- End Weekly-News -->
+<!--   Weekly2-News start -->
+<div class="weekly2-news-area pt-50 pb-30 gray-bg">
+    <div class="container">
+        <div class="weekly2-wrapper">
+            <div class="row">
+                <!-- Banner -->
+                <div class="col-lg-3">
+                    <div class="home-banner2 d-none d-lg-block">
+                        <img src="~/assets/img/gallery/body_card2.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="slider-wrapper">
+                        <!-- section Tittle -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="small-tittle mb-30">
+                                    <h4>Most comments</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slider -->
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="weekly2-news-active d-flex">
 
+                                    @foreach (News n in ViewBag.numOfComments)
+                                    {
+                                        <!-- Single -->
+                                        <div class="weekly2-single">
+                                            <div class="weekly2-img">
+                                                <img src="~/images/@n.NewsPreviewImage" alt="">
+                                            </div>
+                                            <div class="weekly2-caption">
+                                                <h4><a asp-controller="News" asp-action="Index" asp-route-id="@n.NewsId">@n.NewsTitle</a></h4>
+                                                <p>@n.CreatedByNavigation.Username  |  @(Math.Round(DateTime.Now.Subtract((DateTime)n.CreatedDate).TotalHours)) hours ago</p>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Weekly-News -->
+<!--bar char-->
+
+@{
+    List<News> sixNearestNews = ViewBag.commentsOfSixNearestNews;
+    IDictionary<int, double> stars = ViewBag.stars;
+}
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card">
+            <div class="card-header">
+                Bar Chart
+            </div>
+
+            <div class="card-body">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+@section Chart {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script type="text/javascript">
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ["1 sao", "2 sao", "3 sao", "4 sao", "5 sao"],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [@stars[1], @stars[2], @stars[3], @stars[4], @stars[5]],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                    ],
+                    borderColor: [
+                        'rgba(255,99,132,1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+}
+
+
+
+<!--end bar char-->
 <!--   Weekly3-News start -->
 <div class="weekly3-news-area pt-80 pb-130">
     <div class="container">
